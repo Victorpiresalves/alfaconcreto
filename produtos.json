@@ -1,0 +1,564 @@
+{
+  "produtos": [
+    {
+      "nome": "Mesa 1 Metro Diâmetro",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775570064684-3ifvag.png",
+      "descricao": "Produzido em concreto de alta qualidade, é perfeito para jardins, varandas, praças e áreas gourmet.",
+      "dimensoes": "1 metro de diâmetro",
+      "slug": "mesa-1m-diametro"
+    },
+    {
+      "nome": "Pergolado em Concreto",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775527296176-trw9d.png",
+      "descricao": "Ideal para compor áreas externas com charme e funcionalidade. Alta durabilidade e resistência às intempéries.",
+      "dimensoes": "Sob medida",
+      "slug": "pergolado-concreto"
+    },
+    {
+      "nome": "Banco Reto 2,00 x 0,45",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584016766-de9lf.png",
+      "descricao": "Ideal para projetos que exigem aproveitamento inteligente do espaço sem abrir mão da estética.",
+      "dimensoes": "2,00 x 0,45 metros",
+      "slug": "banco-reto-200x045"
+    },
+    {
+      "nome": "Mesa 0,80 Metro Diâmetro",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584058759-zdlgc.png",
+      "descricao": "Perfeita para áreas externas, varandas e ambientes de convivência, unindo durabilidade e design funcional.",
+      "dimensoes": "0,80 metro de diâmetro",
+      "slug": "mesa-080-diametro"
+    },
+    {
+      "nome": "Mesa 0,80 x 0,80",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584081285-ysos58.png",
+      "descricao": "Com design funcional e moderno, é perfeito para jardins, varandas, áreas gourmet e ambientes comerciais.",
+      "dimensoes": "0,80 x 0,80 metros",
+      "slug": "mesa-080x080"
+    },
+    {
+      "nome": "Mesa Sob Medida",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584117823-gokpu.png",
+      "descricao": "Produzido em concreto de alta qualidade, fácil manutenção e longa vida útil.",
+      "dimensoes": "Sob medida",
+      "slug": "mesa-sob-medida"
+    },
+    {
+      "nome": "Banco \"U\" 1,30 x 0,40",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584144365-bpgk.png",
+      "descricao": "Design moderno e linhas minimalistas, ideal para quem busca sofisticação.",
+      "dimensoes": "1,30 x 0,40 metros",
+      "slug": "banco-u-130x040"
+    },
+    {
+      "nome": "Banco Reto 1,40 x 0,30",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584281728-fa8h7p.png",
+      "descricao": "Fabricado em concreto de alta qualidade, suporta as ações do tempo e garante longa vida útil.",
+      "dimensoes": "1,40 x 0,30 metros",
+      "slug": "banco-reto-140x030"
+    },
+    {
+      "nome": "Banco de Encosto Estilo Colonial",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584316864-5rdakx.png",
+      "descricao": "O Banco com Encosto Estilo Colonial é a escolha ideal para quem busca conforto aliado a um design elegante.",
+      "dimensoes": "1,50 x 0,90 metros / 1,30 x 0,90 metros",
+      "slug": "banco-encosto-colonial"
+    },
+    {
+      "nome": "Banco Reto 1,50 x 0,45",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584391310-eqvbi.png",
+      "descricao": "Desenvolvido para oferecer resistência, funcionalidade e design atemporal.",
+      "dimensoes": "1,50 x 0,45 metros",
+      "slug": "banco-reto-150x045"
+    },
+    {
+      "nome": "Banco Pés U",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584363101-fqf9g8.png",
+      "descricao": "O Banco Pés U combina resistência estrutural com um design moderno e funcional.",
+      "dimensoes": "2,00 x 0,45 metros",
+      "slug": "banco-pes-u"
+    },
+    {
+      "nome": "Lixeira em Concreto Fino",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584426556-rng44.png",
+      "descricao": "Acabamento refinado, unindo resistência, durabilidade e estética.",
+      "dimensoes": "1,30 x 0,80 x 0,40 metros",
+      "slug": "lixeira-concreto-fino"
+    },
+    {
+      "nome": "Cuba Artesanal",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584450856-d69n7e.png",
+      "descricao": "Produzida manualmente, a cuba artesanal de concreto carrega autenticidade do feito à mão.",
+      "dimensoes": "50 x 35 x 13 cm",
+      "slug": "cuba-artesanal"
+    },
+    {
+      "nome": "Cuba Bless",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584477606-bt0i6.png",
+      "descricao": "A Cuba Bless é a escolha ideal para quem busca sofisticação e funcionalidade em banheiros e lavabos.",
+      "dimensoes": "50 x 35 x 13 cm",
+      "slug": "cuba-bless"
+    },
+    {
+      "nome": "Cuba Oval Terrazzo",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584492649-t9f9bb.png",
+      "descricao": "Produzida em concreto com acabamento terrazzo, apresenta fragmentos aparentes que criam um efeito único.",
+      "dimensoes": "50 x 35 x 13 cm",
+      "slug": "cuba-oval-terrazzo"
+    },
+    {
+      "nome": "Piso Floral Antiderrapante 4cm",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584523438-4lux4g.png",
+      "descricao": "Peça de concreto desenvolvida para unir segurança, funcionalidade e acabamento decorativo diferenciado.",
+      "dimensoes": "Sob medida",
+      "slug": "piso-floral"
+    },
+    {
+      "nome": "Piso Trevo 6cm",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584578815-yxrd7n.png",
+      "descricao": "Peça de concreto intertravado que combina resistência, durabilidade e design diferenciado em formato de trevo.",
+      "dimensoes": "Sob medida",
+      "slug": "piso-trevo"
+    },
+    {
+      "nome": "Mesa de Ping Pong",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584600967-en843j.png",
+      "descricao": "Projetada para oferecer lazer com máxima durabilidade. Ideal para praças, condomínios e escolas.",
+      "dimensoes": "Tamanho oficial",
+      "slug": "mesa-ping-pong"
+    },
+    {
+      "nome": "Mesa de Futmesa",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584620970-d0t4g8.png",
+      "descricao": "Peça em concreto desenvolvida para unir lazer, resistência e durabilidade em um único produto.",
+      "dimensoes": "Tamanho oficial",
+      "slug": "mesa-futmesa"
+    },
+    {
+      "nome": "Bate Rodas",
+      "categoria": "Área e Lazer",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584661177-6we5a.png",
+      "descricao": "Limitador de concreto projetado para organizar e proteger vagas de estacionamento.",
+      "dimensoes": "Sob medida",
+      "slug": "bate-rodas"
+    },
+    {
+      "nome": "Abstrata",
+      "categoria": "Revestimento",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584691239-mv8r6.png",
+      "descricao": "Formas modernas e textura marcante que transformam paredes em verdadeiros elementos de destaque.",
+      "dimensoes": "Sob medida",
+      "slug": "revestimento-abstrata"
+    },
+    {
+      "nome": "Ripado",
+      "categoria": "Revestimento",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584759008-3y44cn.png",
+      "descricao": "Linhas modernas que criam um efeito de profundidade e elegância nas paredes.",
+      "dimensoes": "0,50 x 0,50 metros",
+      "slug": "revestimento-ripado"
+    },
+    {
+      "nome": "Trapézio 3L",
+      "categoria": "Revestimento",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584800322-khuvhj.png",
+      "descricao": "Oferece alta durabilidade, resistência às intempéries e baixa manutenção.",
+      "dimensoes": "0,50 x 0,25 metros",
+      "slug": "revestimento-trapezio-3l"
+    },
+    {
+      "nome": "Tsunami",
+      "categoria": "Revestimento",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585707934-c8ffdzdl.png",
+      "descricao": "Design com ondas marcantes que criam movimento e destaque nas paredes.",
+      "dimensoes": "0,39 x 0,19 metros",
+      "slug": "revestimento-tsunami"
+    },
+    {
+      "nome": "Zeus",
+      "categoria": "Revestimento",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585765579-m1zyrp.png",
+      "descricao": "Design imponente e marcante, ideal para destacar paredes e fachadas.",
+      "dimensoes": "1,00 x 0,50 metros",
+      "slug": "revestimento-zeus"
+    },
+    {
+      "nome": "Canjiquinha",
+      "categoria": "Revestimento",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775587052919-tinltp.png",
+      "descricao": "Aparência rústica das pedras naturais, criando um efeito elegante e acolhedor.",
+      "dimensoes": "0,50 x 0,20 metros",
+      "slug": "revestimento-canjiquinha"
+    },
+    {
+      "nome": "Mini Origame",
+      "categoria": "Revestimento",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775587029441-ewvebq.png",
+      "descricao": "Design geométrico inspirado nas dobraduras do origami, moderno e sofisticado.",
+      "dimensoes": "0,40 x 0,40 metros",
+      "slug": "revestimento-mini-origame"
+    },
+    {
+      "nome": "Origame",
+      "categoria": "Revestimento",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775586999136-x83zd.png",
+      "descricao": "Ideal para fachadas e ambientes decorativos, une criatividade, resistência e durabilidade.",
+      "dimensoes": "0,50 x 0,20 metros",
+      "slug": "revestimento-origame"
+    },
+    {
+      "nome": "Mosaico",
+      "categoria": "Revestimento",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775586976232-h3iltd.png",
+      "descricao": "Formas que criam um efeito visual moderno e harmonioso nas paredes.",
+      "dimensoes": "Sob medida",
+      "slug": "revestimento-mosaico"
+    },
+    {
+      "nome": "Mosaico Liso",
+      "categoria": "Revestimento",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775586952213-i4utnx.png",
+      "descricao": "Design equilibrado e acabamento uniforme, visual moderno e elegante.",
+      "dimensoes": "0,80 x 0,40 metros",
+      "slug": "revestimento-mosaico-liso"
+    },
+    {
+      "nome": "Multplus",
+      "categoria": "Revestimento",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775586924196-qergk2.png",
+      "descricao": "Design versátil e moderno, que valoriza paredes e fachadas com textura.",
+      "dimensoes": "1,00 x 0,50 metros",
+      "slug": "revestimento-multplus"
+    },
+    {
+      "nome": "Escaleno",
+      "categoria": "Revestimento",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775586903154-0uw9aqo.png",
+      "descricao": "Formas geométricas assimétricas que criam um efeito visual moderno e dinâmico.",
+      "dimensoes": "0,50 x 0,50 metros",
+      "slug": "revestimento-escaleno"
+    },
+    {
+      "nome": "Estrutural",
+      "categoria": "Revestimento",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775586879282-vsizli.png",
+      "descricao": "Visual robusto e moderno, ideal para quem busca resistência e praticidade.",
+      "dimensoes": "0,40 x 0,40 metros",
+      "slug": "revestimento-estrutural"
+    },
+    {
+      "nome": "Ripa Cimentícia",
+      "categoria": "Revestimento",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775586855710-p7txug.png",
+      "descricao": "Efeito ripado moderno que valoriza paredes e fachadas com elegância e textura.",
+      "dimensoes": "100 x 0,87 metros",
+      "slug": "revestimento-ripa-cimenticia"
+    },
+    {
+      "nome": "Filete",
+      "categoria": "Revestimento",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775586324445-3wormi.png",
+      "descricao": "Reproduz o visual das pedras naturais em filetes, efeito rústico e elegante.",
+      "dimensoes": "100 x 0,87 metros",
+      "slug": "revestimento-filete"
+    },
+    {
+      "nome": "KIT 4 Mosaico",
+      "categoria": "Revestimento",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775586293094-clkos4.png",
+      "descricao": "Composto por peças que formam composição geométrica moderna e harmoniosa.",
+      "dimensoes": "0,30 x 0,30 / 0,50 x 0,50 metros",
+      "slug": "revestimento-kit-4-mosaico"
+    },
+    {
+      "nome": "Floral",
+      "categoria": "Revestimento",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775586269571-o4y6tm.png",
+      "descricao": "Design delicado inspirado em formas florais, efeito decorativo elegante.",
+      "dimensoes": "0,30 x 0,30 metros",
+      "slug": "revestimento-floral"
+    },
+    {
+      "nome": "Arabela",
+      "categoria": "Elemento Vazado",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775586831993-6fxcr.png",
+      "descricao": "Elemento vazado com desenho delicado e ornamental, ideal para painéis decorativos.",
+      "dimensoes": "0,39 x 0,39 x 0,07 metros",
+      "slug": "elemento-arabela"
+    },
+    {
+      "nome": "Margarida",
+      "categoria": "Elemento Vazado",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775586402947-e2sddh.png",
+      "descricao": "Design inspirado na forma de margarida, trazendo leveza e toque decorativo.",
+      "dimensoes": "0,39 x 0,39 x 0,07 metros",
+      "slug": "elemento-margarida"
+    },
+    {
+      "nome": "16 Furos",
+      "categoria": "Elemento Vazado",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775586379102-h18cd.png",
+      "descricao": "16 aberturas que garantem excelente ventilação e entrada de luz natural.",
+      "dimensoes": "30 x 30 x 7 cm",
+      "slug": "elemento-16-furos"
+    },
+    {
+      "nome": "Triângulo",
+      "categoria": "Elemento Vazado",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775586357663-irg70b.png",
+      "descricao": "Design geométrico em triângulos que cria efeito visual moderno e dinâmico.",
+      "dimensoes": "40 x 44 x 7 cm",
+      "slug": "elemento-triangulo"
+    },
+    {
+      "nome": "Quadriculado",
+      "categoria": "Elemento Vazado",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775527262878-f71s3.png",
+      "descricao": "Desenho quadriculado que combina ventilação, iluminação natural e estética.",
+      "dimensoes": "0,39 x 0,39 x 0,07 metros",
+      "slug": "elemento-quadriculado"
+    },
+    {
+      "nome": "Mandala",
+      "categoria": "Elemento Vazado",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775586228226-9tk0im.png",
+      "descricao": "Desenho inspirado nas formas da mandala, efeito visual marcante.",
+      "dimensoes": "0,39 x 0,39 x 0,07 metros",
+      "slug": "elemento-mandala"
+    },
+    {
+      "nome": "Árabe",
+      "categoria": "Elemento Vazado",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775586095860-2yhtx.png",
+      "descricao": "Permite a passagem de luz e ventilação natural com apelo estético.",
+      "dimensoes": "0,39 x 0,39 x 0,07 metros",
+      "slug": "elemento-arabe"
+    },
+    {
+      "nome": "Taco Chinês",
+      "categoria": "Elemento Vazado",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775586028034-xfj9u4.png",
+      "descricao": "Formato que facilita o encaixe e permite diferentes paginações.",
+      "dimensoes": "0,39 x 0,39 x 0,07 metros",
+      "slug": "elemento-taco-chines"
+    },
+    {
+      "nome": "Flor",
+      "categoria": "Elemento Vazado",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585997627-ewdwxq.png",
+      "descricao": "Design delicado, permite a passagem de luz e ventilação natural.",
+      "dimensoes": "0,39 x 0,39 x 0,07 metros",
+      "slug": "elemento-flor"
+    },
+    {
+      "nome": "Anti Chuva",
+      "categoria": "Elemento Vazado",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585976877-x841sl.png",
+      "descricao": "Permite circulação de ar e luz natural, reduzindo a incidência direta da chuva.",
+      "dimensoes": "0,39 x 0,39 x 0,07 metros",
+      "slug": "elemento-anti-chuva"
+    },
+    {
+      "nome": "Ralo em Concreto",
+      "categoria": "Acabamento em Concreto",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585951734-xzmr4.png",
+      "descricao": "Peça pré-moldada desenvolvida para auxiliar no escoamento da água.",
+      "dimensoes": "0,30 x 0,30 / 0,49 x 0,49 metros",
+      "slug": "ralo-concreto"
+    },
+    {
+      "nome": "Chapéu de Pilar",
+      "categoria": "Acabamento em Concreto",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585808230-ukkjfq.png",
+      "descricao": "Elemento pré-moldado que garante excelente acabamento e proteção para pilares.",
+      "dimensoes": "Sob medida",
+      "slug": "chapeu-pilar"
+    },
+    {
+      "nome": "Capa de Muro",
+      "categoria": "Acabamento em Concreto",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585849283-4r9tyc.png",
+      "descricao": "Peça pré-moldada para acabamento e proteção do topo de muros.",
+      "dimensoes": "0,17 x 0,80 / 0,19 x 0,80 / 0,23 x 0,80 metros",
+      "slug": "capa-muro"
+    },
+    {
+      "nome": "Pingadeira Reta",
+      "categoria": "Acabamento em Concreto",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585530608-xtpsz.png",
+      "descricao": "Direciona a água da chuva e protege muros e paredes contra infiltrações.",
+      "dimensoes": "0,50 x 0,32 x 0,05 metros",
+      "slug": "pingadeira-reta"
+    },
+    {
+      "nome": "Piso de Calçada",
+      "categoria": "Acabamento em Concreto",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585501825-zshxp.png",
+      "descricao": "Peça pré-moldada para pavimentação de calçadas e áreas externas.",
+      "dimensoes": "0,74 x 0,30 x 0,04 metros",
+      "slug": "piso-calcada"
+    },
+    {
+      "nome": "Lajota Sextavada",
+      "categoria": "Acabamento em Concreto",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585476459-kij6or.png",
+      "descricao": "Formato hexagonal, ideal para pavimentação de calçadas, garagens e pátios.",
+      "dimensoes": "0,25 x 0,25 x 0,08 metros",
+      "slug": "lajota-sextavada"
+    },
+    {
+      "nome": "Lajota Quadrada",
+      "categoria": "Acabamento em Concreto",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585444958-xmul0w.png",
+      "descricao": "Peça pré-moldada versátil e resistente para pavimentação de áreas externas.",
+      "dimensoes": "0,30 x 0,30 x 0,05 a 0,60 x 0,60 x 0,05 metros",
+      "slug": "lajota-quadrada"
+    },
+    {
+      "nome": "Pisante Dormente",
+      "categoria": "Acabamento em Concreto",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585656714-8c2u1a.png",
+      "descricao": "Formato de dormente ferroviário, ideal para caminhos em jardins.",
+      "dimensoes": "0,60 x 0,15 x 0,05 metros",
+      "slug": "pisante-dormente"
+    },
+    {
+      "nome": "Piso de Calçada Copacabana",
+      "categoria": "Acabamento em Concreto",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585411725-5txc2f.png",
+      "descricao": "Inspirado no clássico desenho das calçadas de Copacabana.",
+      "dimensoes": "0,50 x 0,50 x 0,2 metros",
+      "slug": "piso-calcada-copacabana"
+    },
+    {
+      "nome": "Piso Podotátil Alerta",
+      "categoria": "Acabamento em Concreto",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585374318-7x2chv.png",
+      "descricao": "Peça pré-moldada para sinalização tátil de alerta.",
+      "dimensoes": "25 x 25 x 2,5 / 40 x 40 x 2,5 cm",
+      "slug": "piso-podotátil"
+    },
+    {
+      "nome": "Piso Intertravados",
+      "categoria": "Acabamento em Concreto",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585327456-g2xi7n.png",
+      "descricao": "Pavimentação de áreas externas com alta resistência e durabilidade.",
+      "dimensoes": "0,20 x 0,10 metros (espessura 1,5cm a 6cm)",
+      "slug": "piso-intertravados"
+    },
+    {
+      "nome": "Concregrama",
+      "categoria": "Acabamento em Concreto",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585274846-48a45a.png",
+      "descricao": "Peça pré-moldada vazada ideal para pavimentação com drenagem.",
+      "dimensoes": "30 x 50 x 5 cm",
+      "slug": "concregrama"
+    },
+    {
+      "nome": "Guia de Jardim Ondulada",
+      "categoria": "Acabamento em Concreto",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585251148-25c6dd.png",
+      "descricao": "Para delimitar e organizar canteiros, jardins e áreas de paisagismo.",
+      "dimensoes": "0,80 x 0,20 x 0,04 metros",
+      "slug": "guia-jardim-ondulada"
+    },
+    {
+      "nome": "Pisão de Jardim",
+      "categoria": "Acabamento em Concreto",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585232029-c4t8j.png",
+      "descricao": "Ideal para criação de caminhos em jardins, gramados e áreas externas.",
+      "dimensoes": "43 x 33 x 7 cm",
+      "slug": "pisao-jardim"
+    },
+    {
+      "nome": "Guia",
+      "categoria": "Acabamento em Concreto",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585206494-mkjtn7.png",
+      "descricao": "Para delimitar e dar acabamento a calçadas, ruas, jardins e áreas pavimentadas.",
+      "dimensoes": "Sob medida",
+      "slug": "guia"
+    },
+    {
+      "nome": "Casa de Gás 2 Botijão",
+      "categoria": "Construção Civil",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585163512-nuv1ij.png",
+      "descricao": "Estrutura pré-moldada para armazenamento seguro de dois botijões de gás.",
+      "dimensoes": "90 x 105 cm",
+      "slug": "casa-gas-2-botijao"
+    },
+    {
+      "nome": "Casa de Gás 1 Botijão",
+      "categoria": "Construção Civil",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585141246-0yrg5p.png",
+      "descricao": "Estrutura pré-moldada para armazenamento seguro de um botijão de gás.",
+      "dimensoes": "90 x 70 cm",
+      "slug": "casa-gas-1-botijao"
+    },
+    {
+      "nome": "Armário de Concreto",
+      "categoria": "Construção Civil",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585119022-qccckz.png",
+      "descricao": "Peça pré-moldada resistente e funcional para organização em áreas externas.",
+      "dimensoes": "Sob medida",
+      "slug": "armario-concreto"
+    },
+    {
+      "nome": "Placa de Concreto",
+      "categoria": "Construção Civil",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585102441-1k32bp.png",
+      "descricao": "Peça pré-moldada versátil e resistente para diversas aplicações na construção civil.",
+      "dimensoes": "Sob medida",
+      "slug": "placa-concreto"
+    },
+    {
+      "nome": "Meia Cana de Concreto",
+      "categoria": "Construção Civil",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585018672-9zzbr.png",
+      "descricao": "Para condução e escoamento de água em sistemas de drenagem.",
+      "dimensoes": "Sob medida",
+      "slug": "meia-cana"
+    },
+    {
+      "nome": "Cocho",
+      "categoria": "Construção Civil",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585049039-qsjm5r.png",
+      "descricao": "Peça pré-moldada em concreto para alimentação de animais. Resistente e durável.",
+      "dimensoes": "60 x 100 / 40 x 100 cm",
+      "slug": "cocho"
+    },
+    {
+      "nome": "Degraus para Escada",
+      "categoria": "Construção Civil",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775585588007-ywr24.png",
+      "descricao": "Peças pré-moldadas para construção de escadas com praticidade e resistência.",
+      "dimensoes": "100 x 60 cm",
+      "slug": "degraus-escada"
+    },
+    {
+      "nome": "Caixa de Passagem Elétrica c/ Tampa",
+      "categoria": "Construção Civil",
+      "imgUrl": "https://vmvevdngdxskzelnuqer.supabase.co/storage/v1/object/public/product-images/1775584996094-p5jhxe.png",
+      "descricao": "Para proteção e organização de conexões e passagem de cabos elétricos subterrâneos.",
+      "dimensoes": "45 x 45 x 30 cm",
+      "slug": "caixa-passagem-eletrica"
+    }
+  ]
+}
