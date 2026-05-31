@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -701,6 +701,7 @@
 </a>
 
 <script>
+    // Filtro por categoria
     const btns = document.querySelectorAll('.cat-btn');
     const cards = document.querySelectorAll('.prod-card');
     btns.forEach(btn => {
@@ -711,6 +712,97 @@
             cards.forEach(card => {
                 card.classList.toggle('hidden', cat !== 'all' && card.dataset.cat !== cat);
             });
+        });
+    });
+
+    // Mapa: nome do produto (h3) → id na página produto.html
+    const prodMap = {
+      'Mesa Redonda 1m diâmetro':              'mesa-redonda-1m',
+      'Mesa Redonda 0,80m diâmetro':           'mesa-redonda-80cm',
+      'Mesa Quadrada 0,80x0,80':               'mesa-quadrada-80x80',
+      'Mesa Sob Medida':                       'mesa-sob-medida',
+      'Banco Reto':                            'banco-reto',
+      'Banco U':                               'banco-u',
+      'Banco Pés U':                           'banco-pes-u',
+      'Banco com Encosto Estilo Colonial':     'banco-encosto-colonial',
+      'Cuba Artesanal':                        'cuba-artesanal',
+      'Cuba Bless':                            'cuba-bless',
+      'Cuba Oval Terrazzo':                    'cuba-oval-terrazzo',
+      'Pergolado em Concreto':                 'pergolado',
+      'Piso Decorativo Floral':                'piso-floral',
+      'Piso Decorativo Trevo':                 'piso-trevo',
+      'Mesa de Ping Pong':                     'mesa-ping-pong',
+      'Futmesa':                               'futmesa',
+      'Lixeira em Concreto Fino':              'lixeira-concreto-fino',
+      'Bate Rodas':                            'bate-rodas',
+      'Banco com Encosto':                     'banco-com-encosto',
+      'Mobiliário Externo Sob Medida':         'mobiliario-externo',
+      'Painel Abstrata':                       'painel-abstrata',
+      'Painel Ripado':                         'painel-ripado',
+      'Painel Trapézio 3L':                    'painel-trapezio-3l',
+      'Painel Tsunami':                        'painel-tsunami',
+      'Painel Zeus':                           'painel-zeus',
+      'Painel Canjiquinha':                    'painel-canjiquinha',
+      'Painel Mini Origame':                   'painel-mini-origame',
+      'Painel Origame':                        'painel-origame',
+      'Painel Mosaico':                        'painel-mosaico',
+      'Painel Mosaico Liso':                   'painel-mosaico-liso',
+      'Painel Multplus':                       'painel-multplus',
+      'Painel Escaleno':                       'painel-escaleno',
+      'Painel Estrutural':                     'painel-estrutural',
+      'Ripa Cimentícia':                       'ripa-cimenticea',
+      'Painel Filete':                         'painel-filete',
+      'Kit 4 Mosaico':                         'kit-4-mosaico',
+      'Painel Floral':                         'painel-floral',
+      'Cobogó Arabela':                        'cobogo-arabela',
+      'Cobogó Margarida':                      'cobogo-margarida',
+      'Cobogó 16 Furos':                       'cobogo-16-furos',
+      'Cobogó Triângulo':                      'cobogo-triangulo',
+      'Cobogó Quadriculado':                   'cobogo-quadriculado',
+      'Cobogó Mandala':                        'cobogo-mandala',
+      'Cobogó Árabe':                          'cobogo-arabe',
+      'Cobogó Taco Chinês':                    'cobogo-taco-chines',
+      'Cobogó Flor':                           'cobogo-flor',
+      'Elemento Anti Chuva':                   'elemento-anti-chuva',
+      'Ralo em Concreto':                      'ralo-concreto',
+      'Chapéu de Pilar':                       'chapeu-pilar',
+      'Capa de Muro':                          'capa-muro',
+      'Pingadeira Reta':                       'pingadeira-reta',
+      'Piso Calçada':                          'piso-calcada',
+      'Piso Sextavada':                        'piso-sextavada',
+      'Piso Quadrada':                         'piso-quadrada',
+      'Piso Podotátil Alerta':                 'piso-podotátil',
+      'Pisante Dormente':                      'pisante-dormente',
+      'Piso Copacabana':                       'piso-copacabana',
+      'Piso Intertravados':                    'piso-intertravados',
+      'Concregrama':                           'concregrama',
+      'Guia Jardim Ondulada':                  'guia-jardim-ondulada',
+      'Guia Reta':                             'guia-reta',
+      'Pisão de Jardim':                       'pisao-jardim',
+      'Casa de Gás 1 Botijão':                'casa-gas-1',
+      'Casa de Gás 2 Botijões':              'casa-gas-2',
+      'Armário de Concreto':                   'armario-concreto',
+      'Placa de Concreto':                     'placa-concreto',
+      'Meia Cana de Concreto':                 'meia-cana',
+      'Cocho para Animais':                    'cocho-animais',
+      'Degraus para Escada':                   'degraus-escada',
+      'Caixa de Passagem Elétrica com Tampa': 'caixa-passagem'
+    };
+
+    // Torna cada card clicável abrindo produto.html em nova aba
+    document.querySelectorAll('.prod-card').forEach(card => {
+        const nome = card.querySelector('h3')?.textContent?.trim();
+        const id = prodMap[nome];
+        if (!id) return;
+        const url = 'produto.html?id=' + id;
+        // Atualiza o link "Ver produto"
+        const link = card.querySelector('.prod-link');
+        if (link) { link.href = url; link.target = '_blank'; link.textContent = 'Ver produto →'; }
+        // Card inteiro clicável
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', e => {
+            if (e.target.closest('a')) return; // não interfere nos links internos
+            window.open(url, '_blank');
         });
     });
 </script>
