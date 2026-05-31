@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alfa Soluções em Concreto | Araçatuba - SP</title>
-    <meta name="description" content="Fornecedora de soluções em concreto pré-moldado de alta qualidade. Produtos para construção, paisagismo e projetos arquitetônicos em Araçatuba, SP.">
+    <meta name="description" content="Fornecedora de soluções em concreto pré-moldado de alta qualidade. 70 produtos para construção, paisagismo e projetos arquitetônicos em Araçatuba, SP.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
         :root {
             --navy:       #01183D;
             --blue:       #12457A;
@@ -19,44 +18,20 @@
             --gray:       #D9D9D9;
             --gray-light: #EDEDED;
         }
-
         html { scroll-behavior: smooth; }
         body { font-family: 'Inter', sans-serif; background: var(--white); color: #222; line-height: 1.6; }
 
         /* TOP BAR */
-        .top-bar {
-            background: var(--green);
-            color: var(--navy);
-            font-size: 0.8rem;
-            font-weight: 600;
-            padding: 7px 24px;
-            text-align: center;
-            letter-spacing: 0.3px;
-        }
+        .top-bar { background: var(--green); color: var(--navy); font-size: 0.8rem; font-weight: 600; padding: 7px 24px; text-align: center; }
         .top-bar a { color: var(--navy); text-decoration: none; }
 
         /* HEADER */
-        header {
-            background: var(--navy);
-            position: sticky;
-            top: 0;
-            z-index: 200;
-            box-shadow: 0 2px 24px rgba(0,0,0,0.35);
-        }
-        .header-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 72px;
-        }
+        header { background: var(--navy); position: sticky; top: 0; z-index: 200; box-shadow: 0 2px 24px rgba(0,0,0,0.35); }
+        .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
         .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
         .logo img { height: 46px; object-fit: contain; }
         .logo-name { color: #fff; font-size: 1rem; font-weight: 700; line-height: 1.25; }
         .logo-name em { color: var(--green); font-style: normal; }
-
         nav { display: flex; align-items: center; gap: 4px; }
         nav a { color: var(--gray); text-decoration: none; font-size: 0.875rem; font-weight: 500; padding: 8px 14px; border-radius: 6px; transition: all 0.2s; }
         nav a:hover { color: #fff; background: rgba(255,255,255,0.08); }
@@ -64,52 +39,20 @@
         .nav-cta:hover { background: var(--green-mid) !important; color: #fff !important; }
 
         /* HERO */
-        .hero {
-            background: linear-gradient(135deg, var(--navy) 0%, #0a2a5e 55%, var(--blue) 100%);
-            position: relative;
-            overflow: hidden;
-            padding: 96px 24px 120px;
-        }
-        .hero::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: url('./Alfa Solucoes em Concreto_files/hero-1776094806314.png') center/cover no-repeat;
-            opacity: 0.1;
-        }
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: -1px; left: 0; right: 0; height: 80px;
-            background: linear-gradient(to bottom, transparent, var(--white));
-        }
+        .hero { background: linear-gradient(135deg, var(--navy) 0%, #0a2a5e 55%, var(--blue) 100%); position: relative; overflow: hidden; padding: 96px 24px 120px; }
+        .hero::before { content: ''; position: absolute; inset: 0; background: url('./Alfa Solucoes em Concreto_files/hero-1776094806314.png') center/cover no-repeat; opacity: 0.1; }
+        .hero::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 80px; background: linear-gradient(to bottom, transparent, var(--white)); }
         .hero-inner { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(55,192,143,0.12);
-            border: 1px solid rgba(55,192,143,0.4);
-            color: var(--green);
-            font-size: 0.75rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            padding: 7px 16px;
-            border-radius: 100px;
-            margin-bottom: 28px;
-        }
+        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(55,192,143,0.12); border: 1px solid rgba(55,192,143,0.4); color: var(--green); font-size: 0.75rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 7px 16px; border-radius: 100px; margin-bottom: 28px; }
         .hero h1 { font-size: clamp(2.2rem, 5.5vw, 3.8rem); font-weight: 800; color: #fff; line-height: 1.08; margin-bottom: 24px; max-width: 680px; letter-spacing: -1px; }
         .hero h1 span { color: var(--green); }
         .hero p { font-size: 1.1rem; color: #a0b4cc; max-width: 520px; margin-bottom: 44px; line-height: 1.75; }
         .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
-
         .btn { display: inline-flex; align-items: center; gap: 8px; font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 700; padding: 14px 28px; border-radius: 8px; text-decoration: none; transition: all 0.2s; border: 2px solid transparent; white-space: nowrap; }
         .btn-green { background: var(--green); color: var(--navy); border-color: var(--green); }
         .btn-green:hover { background: var(--green-mid); border-color: var(--green-mid); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(55,192,143,0.3); }
         .btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,0.25); }
         .btn-ghost:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.06); }
-
         .hero-stats { display: flex; gap: 0; margin-top: 72px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 40px; flex-wrap: wrap; }
         .stat { flex: 1; min-width: 140px; padding: 0 32px 0 0; }
         .stat + .stat { border-left: 1px solid rgba(255,255,255,0.1); padding-left: 32px; }
@@ -122,7 +65,7 @@
         .section-inner { max-width: 1200px; margin: 0 auto; }
         .eyebrow { font-size: 0.72rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--green); margin-bottom: 14px; }
         .section-h2 { font-size: clamp(1.7rem, 3.5vw, 2.5rem); font-weight: 800; color: var(--navy); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 16px; }
-        .section-lead { font-size: 1rem; color: #5a6a7a; max-width: 520px; line-height: 1.75; margin-bottom: 56px; }
+        .section-lead { font-size: 1rem; color: #5a6a7a; max-width: 520px; line-height: 1.75; margin-bottom: 48px; }
 
         /* FEATURES */
         .features-section { background: var(--navy); }
@@ -135,22 +78,87 @@
         .feat-card h3 { color: #fff; font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; }
         .feat-card p { color: #7a9ab8; font-size: 0.88rem; line-height: 1.65; }
 
-        /* PRODUCTS */
-        .products-section { background: var(--gray-light); }
-        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
-        .prod-card { background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid var(--gray); box-shadow: 0 2px 12px rgba(0,0,0,0.05); display: flex; flex-direction: column; transition: all 0.3s; }
-        .prod-card:hover { transform: translateY(-7px); box-shadow: 0 16px 48px rgba(1,24,61,0.13); border-color: var(--green); }
-        .prod-thumb { height: 210px; overflow: hidden; background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%); position: relative; }
-        .prod-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.45s ease; }
-        .prod-card:hover .prod-thumb img { transform: scale(1.07); }
-        .prod-badge { position: absolute; top: 14px; right: 14px; background: var(--green); color: var(--navy); font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 100px; }
-        .prod-body { padding: 26px; flex: 1; display: flex; flex-direction: column; }
-        .prod-body h3 { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
-        .prod-body p { color: #5a6a7a; font-size: 0.88rem; line-height: 1.65; flex: 1; margin-bottom: 18px; }
-        .prod-samples { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
-        .prod-sample { background: var(--gray-light); color: #445; font-size: 0.72rem; font-weight: 500; padding: 3px 10px; border-radius: 4px; border: 1px solid var(--gray); }
-        .prod-link { display: inline-flex; align-items: center; gap: 7px; color: var(--green); font-size: 0.88rem; font-weight: 700; text-decoration: none; transition: gap 0.2s, color 0.2s; }
-        .prod-link:hover { gap: 12px; color: var(--green-mid); }
+        /* CATALOG */
+        .catalog-section { background: var(--gray-light); }
+
+        .cat-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+        .cat-btn {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 9px 18px;
+            border-radius: 100px;
+            border: 2px solid var(--gray);
+            background: #fff;
+            color: #556;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        .cat-btn:hover { border-color: var(--green); color: var(--green); }
+        .cat-btn.active { background: var(--navy); border-color: var(--navy); color: #fff; }
+
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .prod-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--gray);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s;
+        }
+        .prod-card:hover { transform: translateY(-6px); box-shadow: 0 14px 40px rgba(1,24,61,0.13); border-color: var(--green); }
+        .prod-card.hidden { display: none; }
+        .prod-thumb {
+            height: 180px;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
+            position: relative;
+        }
+        .prod-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; display: block; }
+        .prod-card:hover .prod-thumb img { transform: scale(1.08); }
+        .cat-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            padding: 3px 10px;
+            border-radius: 100px;
+            text-transform: uppercase;
+        }
+        .badge-area    { background: #dff5ec; color: #1a7a50; }
+        .badge-rev     { background: #e8f0fb; color: #1a3a7a; }
+        .badge-vaz     { background: #fef3e2; color: #8a5200; }
+        .badge-acab    { background: #f3e8fb; color: #5a1a7a; }
+        .badge-civil   { background: #fde8e8; color: #7a1a1a; }
+
+        .prod-body { padding: 16px 18px 20px; flex: 1; display: flex; flex-direction: column; }
+        .prod-body h3 { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 14px; line-height: 1.3; }
+        .prod-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--green);
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-decoration: none;
+            margin-top: auto;
+            transition: gap 0.2s, color 0.2s;
+        }
+        .prod-link:hover { gap: 10px; color: var(--green-mid); }
 
         /* ABOUT */
         .about-section { background: #fff; }
@@ -213,6 +221,7 @@
             .cta-banner-inner { flex-direction: column; }
             .footer-body { grid-template-columns: 1fr; gap: 32px; }
             .footer-bottom { flex-direction: column; text-align: center; }
+            .catalog-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
         }
     </style>
 </head>
@@ -221,12 +230,9 @@
 <!-- TOP BAR -->
 <div class="top-bar">
     ☎&nbsp;<a href="tel:+5518997603980">(18) 99760-3980</a>
-    &nbsp;|&nbsp;
-    <a href="tel:+5518996769650">(18) 99676-9650</a>
-    &nbsp;|&nbsp;
-    Seg. a Sex. 7h–17h
-    &nbsp;|&nbsp;
-    📍 Jardim Sumaré, Araçatuba-SP
+    &nbsp;|&nbsp;<a href="tel:+5518996769650">(18) 99676-9650</a>
+    &nbsp;|&nbsp; Seg. a Sex. 7h–17h
+    &nbsp;|&nbsp; 📍 Jardim Sumaré, Araçatuba-SP
 </div>
 
 <!-- HEADER -->
@@ -256,22 +262,10 @@
             <a href="https://wa.me/5518997603980" target="_blank" rel="noopener" class="btn btn-ghost">💬 Solicitar Orçamento</a>
         </div>
         <div class="hero-stats">
-            <div class="stat">
-                <div class="stat-num">70<em>+</em></div>
-                <div class="stat-lbl">Produtos no catálogo</div>
-            </div>
-            <div class="stat">
-                <div class="stat-num">5</div>
-                <div class="stat-lbl">Linhas especializadas</div>
-            </div>
-            <div class="stat">
-                <div class="stat-num">100<em>%</em></div>
-                <div class="stat-lbl">Concreto de alta qualidade</div>
-            </div>
-            <div class="stat">
-                <div class="stat-num">Araçatuba</div>
-                <div class="stat-lbl">Interior de São Paulo</div>
-            </div>
+            <div class="stat"><div class="stat-num">70<em>+</em></div><div class="stat-lbl">Produtos no catálogo</div></div>
+            <div class="stat"><div class="stat-num">5</div><div class="stat-lbl">Linhas especializadas</div></div>
+            <div class="stat"><div class="stat-num">100<em>%</em></div><div class="stat-lbl">Concreto de alta qualidade</div></div>
+            <div class="stat"><div class="stat-num">Araçatuba</div><div class="stat-lbl">Interior de São Paulo</div></div>
         </div>
     </div>
 </section>
@@ -283,131 +277,320 @@
         <h2 class="section-h2">Qualidade que se vê.<br>Resistência que se prova.</h2>
         <p class="section-lead">Cada produto é fabricado com rigoroso controle de qualidade, garantindo durabilidade superior e acabamento premium.</p>
         <div class="features-grid">
-            <div class="feat-card">
-                <div class="feat-icon">🏗️</div>
-                <h3>Alta Durabilidade</h3>
-                <p>Produtos desenvolvidos para resistir às intempéries e ao desgaste do tempo, mantendo integridade estrutural e estética por décadas.</p>
-            </div>
-            <div class="feat-card">
-                <div class="feat-icon">🎨</div>
-                <h3>Design Contemporâneo</h3>
-                <p>Linha completa com acabamentos variados — fino, terrazzo, rústico e artesanal — para atender qualquer projeto arquitetônico.</p>
-            </div>
-            <div class="feat-card">
-                <div class="feat-icon">🔧</div>
-                <h3>Baixa Manutenção</h3>
-                <p>Concreto pré-moldado com custo de manutenção reduzido e longa vida útil para projetos residenciais, comerciais e públicos.</p>
-            </div>
-            <div class="feat-card">
-                <div class="feat-icon">📐</div>
-                <h3>Sob Medida</h3>
-                <p>Capacidade produtiva para atender pedidos personalizados, adaptados às especificações técnicas e estéticas do seu projeto.</p>
-            </div>
+            <div class="feat-card"><div class="feat-icon">🏗️</div><h3>Alta Durabilidade</h3><p>Produtos desenvolvidos para resistir às intempéries e ao desgaste do tempo, mantendo integridade estrutural por décadas.</p></div>
+            <div class="feat-card"><div class="feat-icon">🎨</div><h3>Design Contemporâneo</h3><p>Linha completa com acabamentos variados — fino, terrazzo, rústico e artesanal — para atender qualquer projeto.</p></div>
+            <div class="feat-card"><div class="feat-icon">🔧</div><h3>Baixa Manutenção</h3><p>Concreto pré-moldado com custo de manutenção reduzido e longa vida útil para projetos residenciais e comerciais.</p></div>
+            <div class="feat-card"><div class="feat-icon">📐</div><h3>Sob Medida</h3><p>Capacidade produtiva para atender pedidos personalizados, adaptados às especificações do seu projeto.</p></div>
         </div>
     </div>
 </section>
 
-<!-- PRODUTOS -->
-<section class="section products-section" id="produtos">
+<!-- CATÁLOGO COMPLETO -->
+<section class="section catalog-section" id="produtos">
     <div class="section-inner">
-        <p class="eyebrow">Nosso Catálogo</p>
-        <h2 class="section-h2">Linhas de Produto</h2>
-        <p class="section-lead">70 produtos distribuídos em 5 linhas especializadas para atender todas as necessidades da sua obra ou projeto.</p>
-        <div class="products-grid">
+        <p class="eyebrow">Catálogo Completo</p>
+        <h2 class="section-h2">Todos os Produtos</h2>
+        <p class="section-lead">70 produtos em 5 linhas especializadas. Filtre por categoria ou navegue pelo catálogo completo.</p>
 
-            <div class="prod-card">
-                <div class="prod-thumb">
-                    <img src="./Alfa Solucoes em Concreto_files/1775572725248-d76cpr.png" alt="Área e Lazer">
-                    <span class="prod-badge">20 produtos</span>
-                </div>
-                <div class="prod-body">
-                    <h3>Área e Lazer</h3>
-                    <p>Mobiliário externo e elementos decorativos em concreto para espaços de convivência com design contemporâneo e máxima resistência.</p>
-                    <div class="prod-samples">
-                        <span class="prod-sample">Mesas</span>
-                        <span class="prod-sample">Bancos</span>
-                        <span class="prod-sample">Pergolado</span>
-                        <span class="prod-sample">Pisos Decorativos</span>
-                        <span class="prod-sample">Lixeira</span>
-                    </div>
-                    <a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20produtos%20de%20Área%20e%20Lazer." target="_blank" rel="noopener" class="prod-link">Solicitar orçamento →</a>
-                </div>
+        <div class="cat-filters">
+            <button class="cat-btn active" data-cat="all">Todos (70)</button>
+            <button class="cat-btn" data-cat="area-lazer">🌿 Área e Lazer (20)</button>
+            <button class="cat-btn" data-cat="revestimento">🧱 Revestimento (17)</button>
+            <button class="cat-btn" data-cat="elemento-vazado">🔶 Elemento Vazado (10)</button>
+            <button class="cat-btn" data-cat="acabamento">🪨 Acabamento (15)</button>
+            <button class="cat-btn" data-cat="construcao-civil">🏠 Construção Civil (8)</button>
+        </div>
+
+        <div class="catalog-grid" id="catalogGrid">
+
+            <!-- ÁREA E LAZER (20) -->
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775527262878-f71s3.png" alt="Mesa Redonda 1m" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Mesa Redonda 1m diâmetro</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Mesa%20Redonda%201m." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775527296176-trw9d.png" alt="Mesa Redonda 0,80m" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Mesa Redonda 0,80m diâmetro</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Mesa%20Redonda%200%2C80m." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775570064684-3ifvag.png" alt="Mesa Quadrada 0,80x0,80" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Mesa Quadrada 0,80x0,80</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Mesa%20Quadrada." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775572725248-d76cpr.png" alt="Mesa Sob Medida" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Mesa Sob Medida</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Mesa%20Sob%20Medida." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775572737742-0b8kkt.png" alt="Banco Reto" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Banco Reto</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Banco%20Reto." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775572752422-b8mjk.png" alt="Banco U" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Banco U</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Banco%20U." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775572766165-49p7zn.png" alt="Banco Pés U" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Banco Pés U</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Banco%20Pés%20U." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775572780988-ltpztr.png" alt="Banco com Encosto Colonial" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Banco com Encosto Estilo Colonial</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Banco%20Colonial." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584016766-de9lf.png" alt="Cuba Artesanal" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Cuba Artesanal</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Cuba%20Artesanal." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584058759-zdlgc.png" alt="Cuba Bless" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Cuba Bless</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Cuba%20Bless." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584081285-ysos58.png" alt="Cuba Oval Terrazzo" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Cuba Oval Terrazzo</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Cuba%20Oval%20Terrazzo." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584117823-gokpu.png" alt="Pergolado em Concreto" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Pergolado em Concreto</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Pergolado." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584144365-bpgk.png" alt="Piso Decorativo Floral" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Piso Decorativo Floral</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Piso%20Decorativo%20Floral." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584281728-fa8h7p.png" alt="Piso Decorativo Trevo" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Piso Decorativo Trevo</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Piso%20Decorativo%20Trevo." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584316864-5rdakx.png" alt="Mesa de Ping Pong" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Mesa de Ping Pong</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Mesa%20de%20Ping%20Pong." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584363101-fqf9g8.png" alt="Futmesa" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Futmesa</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Futmesa." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584391310-eqvbi.png" alt="Lixeira em Concreto Fino" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Lixeira em Concreto Fino</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Lixeira%20em%20Concreto%20Fino." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584426556-rng44.png" alt="Bate Rodas" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Bate Rodas</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Bate%20Rodas." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584450856-d69n7e.png" alt="Banco com Encosto" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Banco com Encosto</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Banco%20com%20Encosto." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="area-lazer">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584477606-bt0i6.png" alt="Mobiliário Externo Sob Medida" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
+                <div class="prod-body"><h3>Mobiliário Externo Sob Medida</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Mobiliário%20Externo." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
             </div>
 
-            <div class="prod-card">
-                <div class="prod-thumb">
-                    <img src="./Alfa Solucoes em Concreto_files/1775584016766-de9lf.png" alt="Revestimento">
-                    <span class="prod-badge">17 produtos</span>
-                </div>
-                <div class="prod-body">
-                    <h3>Revestimento</h3>
-                    <p>Painéis decorativos para paredes e fachadas com designs exclusivos que valorizam qualquer ambiente interno ou externo.</p>
-                    <div class="prod-samples">
-                        <span class="prod-sample">Ripado</span>
-                        <span class="prod-sample">Tsunami</span>
-                        <span class="prod-sample">Zeus</span>
-                        <span class="prod-sample">Mosaico</span>
-                        <span class="prod-sample">Origame</span>
-                    </div>
-                    <a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20produtos%20de%20Revestimento." target="_blank" rel="noopener" class="prod-link">Solicitar orçamento →</a>
-                </div>
+            <!-- REVESTIMENTO (17) -->
+            <div class="prod-card" data-cat="revestimento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584492649-t9f9bb.png" alt="Abstrata" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
+                <div class="prod-body"><h3>Painel Abstrata</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Painel%20Abstrata." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="revestimento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584523438-4lux4g.png" alt="Ripado" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
+                <div class="prod-body"><h3>Painel Ripado</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Painel%20Ripado." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="revestimento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584578815-yxrd7n.png" alt="Trapézio 3L" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
+                <div class="prod-body"><h3>Painel Trapézio 3L</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Painel%20Trapézio%203L." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="revestimento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584600967-en843j.png" alt="Tsunami" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
+                <div class="prod-body"><h3>Painel Tsunami</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Painel%20Tsunami." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="revestimento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584620970-d0t4g8.png" alt="Zeus" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
+                <div class="prod-body"><h3>Painel Zeus</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Painel%20Zeus." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="revestimento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584661177-6we5a.png" alt="Canjiquinha" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
+                <div class="prod-body"><h3>Painel Canjiquinha</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Painel%20Canjiquinha." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="revestimento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584691239-mv8r6.png" alt="Mini Origame" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
+                <div class="prod-body"><h3>Painel Mini Origame</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Painel%20Mini%20Origame." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="revestimento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584759008-3y44cn.png" alt="Origame" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
+                <div class="prod-body"><h3>Painel Origame</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Painel%20Origame." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="revestimento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584800322-khuvhj.png" alt="Mosaico" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
+                <div class="prod-body"><h3>Painel Mosaico</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Painel%20Mosaico." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="revestimento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584996094-p5jhxe.png" alt="Mosaico Liso" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
+                <div class="prod-body"><h3>Painel Mosaico Liso</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Painel%20Mosaico%20Liso." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="revestimento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585018672-9zzbr.png" alt="Multplus" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
+                <div class="prod-body"><h3>Painel Multplus</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Painel%20Multplus." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="revestimento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585049039-qsjm5r.png" alt="Escaleno" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
+                <div class="prod-body"><h3>Painel Escaleno</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Painel%20Escaleno." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="revestimento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585102441-1k32bp.png" alt="Estrutural" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
+                <div class="prod-body"><h3>Painel Estrutural</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Painel%20Estrutural." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="revestimento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585119022-qccckz.png" alt="Ripa Cimentícia" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
+                <div class="prod-body"><h3>Ripa Cimentícia</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Ripa%20Cimentícia." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="revestimento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585141246-0yrg5p.png" alt="Filete" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
+                <div class="prod-body"><h3>Painel Filete</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Painel%20Filete." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="revestimento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585163512-nuv1ij.png" alt="Kit 4 Mosaico" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
+                <div class="prod-body"><h3>Kit 4 Mosaico</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Kit%204%20Mosaico." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="revestimento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585206494-mkjtn7.png" alt="Floral" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
+                <div class="prod-body"><h3>Painel Floral</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Painel%20Floral." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
             </div>
 
-            <div class="prod-card">
-                <div class="prod-thumb">
-                    <img src="./Alfa Solucoes em Concreto_files/1775585102441-1k32bp.png" alt="Elemento Vazado">
-                    <span class="prod-badge">10 produtos</span>
-                </div>
-                <div class="prod-body">
-                    <h3>Elemento Vazado</h3>
-                    <p>Cobogós e elementos vazados para ventilação natural e decoração, combinando função e estética em projetos modernos.</p>
-                    <div class="prod-samples">
-                        <span class="prod-sample">Arabela</span>
-                        <span class="prod-sample">Margarida</span>
-                        <span class="prod-sample">Mandala</span>
-                        <span class="prod-sample">Árabe</span>
-                        <span class="prod-sample">Anti Chuva</span>
-                    </div>
-                    <a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Elementos%20Vazados." target="_blank" rel="noopener" class="prod-link">Solicitar orçamento →</a>
-                </div>
+            <!-- ELEMENTO VAZADO (10) -->
+            <div class="prod-card" data-cat="elemento-vazado">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585232029-c4t8j.png" alt="Arabela" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
+                <div class="prod-body"><h3>Cobogó Arabela</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Cobogó%20Arabela." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="elemento-vazado">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585251148-25c6dd.png" alt="Margarida" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
+                <div class="prod-body"><h3>Cobogó Margarida</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Cobogó%20Margarida." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="elemento-vazado">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585274846-48a45a.png" alt="16 Furos" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
+                <div class="prod-body"><h3>Cobogó 16 Furos</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Cobogó%2016%20Furos." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="elemento-vazado">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585327456-g2xi7n.png" alt="Triângulo" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
+                <div class="prod-body"><h3>Cobogó Triângulo</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Cobogó%20Triângulo." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="elemento-vazado">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585374318-7x2chv.png" alt="Quadriculado" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
+                <div class="prod-body"><h3>Cobogó Quadriculado</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Cobogó%20Quadriculado." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="elemento-vazado">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585411725-5txc2f.png" alt="Mandala" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
+                <div class="prod-body"><h3>Cobogó Mandala</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Cobogó%20Mandala." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="elemento-vazado">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585444958-xmul0w.png" alt="Árabe" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
+                <div class="prod-body"><h3>Cobogó Árabe</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Cobogó%20Árabe." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="elemento-vazado">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585476459-kij6or.png" alt="Taco Chinês" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
+                <div class="prod-body"><h3>Cobogó Taco Chinês</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Cobogó%20Taco%20Chinês." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="elemento-vazado">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585501825-zshxp.png" alt="Flor" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
+                <div class="prod-body"><h3>Cobogó Flor</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Cobogó%20Flor." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="elemento-vazado">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585530608-xtpsz.png" alt="Anti Chuva" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
+                <div class="prod-body"><h3>Elemento Anti Chuva</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Elemento%20Anti%20Chuva." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
             </div>
 
-            <div class="prod-card">
-                <div class="prod-thumb">
-                    <img src="./Alfa Solucoes em Concreto_files/1775585588007-ywr24.png" alt="Acabamento em Concreto">
-                    <span class="prod-badge">15 produtos</span>
-                </div>
-                <div class="prod-body">
-                    <h3>Acabamento em Concreto</h3>
-                    <p>Pisos, guias, ralos e complementos construtivos para arremates de alta qualidade em calçadas, jardins e áreas externas.</p>
-                    <div class="prod-samples">
-                        <span class="prod-sample">Pisos</span>
-                        <span class="prod-sample">Guias</span>
-                        <span class="prod-sample">Ralo</span>
-                        <span class="prod-sample">Capa de Muro</span>
-                        <span class="prod-sample">Concregrama</span>
-                    </div>
-                    <a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20produtos%20de%20Acabamento." target="_blank" rel="noopener" class="prod-link">Solicitar orçamento →</a>
-                </div>
+            <!-- ACABAMENTO EM CONCRETO (15) -->
+            <div class="prod-card" data-cat="acabamento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585588007-ywr24.png" alt="Ralo em Concreto" loading="lazy"><span class="cat-badge badge-acab">Acabamento</span></div>
+                <div class="prod-body"><h3>Ralo em Concreto</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Ralo%20em%20Concreto." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="acabamento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585656714-8c2u1a.png" alt="Chapéu de Pilar" loading="lazy"><span class="cat-badge badge-acab">Acabamento</span></div>
+                <div class="prod-body"><h3>Chapéu de Pilar</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Chapéu%20de%20Pilar." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="acabamento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585707934-c8ffdzdl.png" alt="Capa de Muro" loading="lazy"><span class="cat-badge badge-acab">Acabamento</span></div>
+                <div class="prod-body"><h3>Capa de Muro</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Capa%20de%20Muro." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="acabamento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585765579-m1zyrp.png" alt="Pingadeira Reta" loading="lazy"><span class="cat-badge badge-acab">Acabamento</span></div>
+                <div class="prod-body"><h3>Pingadeira Reta</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Pingadeira%20Reta." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="acabamento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585808230-ukkjfq.png" alt="Piso Calçada" loading="lazy"><span class="cat-badge badge-acab">Acabamento</span></div>
+                <div class="prod-body"><h3>Piso Calçada</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Piso%20Calçada." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="acabamento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585849283-4r9tyc.png" alt="Piso Sextavada" loading="lazy"><span class="cat-badge badge-acab">Acabamento</span></div>
+                <div class="prod-body"><h3>Piso Sextavada</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Piso%20Sextavada." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="acabamento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585951734-xzmr4.png" alt="Piso Quadrada" loading="lazy"><span class="cat-badge badge-acab">Acabamento</span></div>
+                <div class="prod-body"><h3>Piso Quadrada</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Piso%20Quadrada." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="acabamento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585976877-x841sl.png" alt="Piso Podotátil Alerta" loading="lazy"><span class="cat-badge badge-acab">Acabamento</span></div>
+                <div class="prod-body"><h3>Piso Podotátil Alerta</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Piso%20Podotátil." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="acabamento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585997627-ewdwxq.png" alt="Pisante Dormente" loading="lazy"><span class="cat-badge badge-acab">Acabamento</span></div>
+                <div class="prod-body"><h3>Pisante Dormente</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Pisante%20Dormente." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="acabamento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586028034-xfj9u4.png" alt="Piso Copacabana" loading="lazy"><span class="cat-badge badge-acab">Acabamento</span></div>
+                <div class="prod-body"><h3>Piso Copacabana</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Piso%20Copacabana." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="acabamento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586095860-2yhtx.png" alt="Piso Intertravados" loading="lazy"><span class="cat-badge badge-acab">Acabamento</span></div>
+                <div class="prod-body"><h3>Piso Intertravados</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Piso%20Intertravados." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="acabamento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586228226-9tk0im.png" alt="Concregrama" loading="lazy"><span class="cat-badge badge-acab">Acabamento</span></div>
+                <div class="prod-body"><h3>Concregrama</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Concregrama." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="acabamento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586269571-o4y6tm.png" alt="Guia Jardim Ondulada" loading="lazy"><span class="cat-badge badge-acab">Acabamento</span></div>
+                <div class="prod-body"><h3>Guia Jardim Ondulada</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Guia%20Jardim%20Ondulada." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="acabamento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586293094-clkos4.png" alt="Guia Reta" loading="lazy"><span class="cat-badge badge-acab">Acabamento</span></div>
+                <div class="prod-body"><h3>Guia Reta</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Guia%20Reta." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="acabamento">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586324445-3wormi.png" alt="Pisão de Jardim" loading="lazy"><span class="cat-badge badge-acab">Acabamento</span></div>
+                <div class="prod-body"><h3>Pisão de Jardim</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Pisão%20de%20Jardim." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
             </div>
 
-            <div class="prod-card">
-                <div class="prod-thumb">
-                    <img src="./Alfa Solucoes em Concreto_files/1775586324445-3wormi.png" alt="Construção Civil">
-                    <span class="prod-badge">8 produtos</span>
-                </div>
-                <div class="prod-body">
-                    <h3>Construção Civil</h3>
-                    <p>Soluções estruturais e funcionais para a obra: casa de gás, armários, placas, degraus e componentes elétricos em concreto.</p>
-                    <div class="prod-samples">
-                        <span class="prod-sample">Casa de Gás</span>
-                        <span class="prod-sample">Armário</span>
-                        <span class="prod-sample">Degraus</span>
-                        <span class="prod-sample">Placa</span>
-                        <span class="prod-sample">Meia Cana</span>
-                    </div>
-                    <a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20produtos%20de%20Construção%20Civil." target="_blank" rel="noopener" class="prod-link">Solicitar orçamento →</a>
-                </div>
+            <!-- CONSTRUÇÃO CIVIL (8) -->
+            <div class="prod-card" data-cat="construcao-civil">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586357663-irg70b.png" alt="Casa de Gás 1 Botijão" loading="lazy"><span class="cat-badge badge-civil">Construção Civil</span></div>
+                <div class="prod-body"><h3>Casa de Gás 1 Botijão</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Casa%20de%20Gás%201%20Botijão." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="construcao-civil">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586379102-h18cd.png" alt="Casa de Gás 2 Botijões" loading="lazy"><span class="cat-badge badge-civil">Construção Civil</span></div>
+                <div class="prod-body"><h3>Casa de Gás 2 Botijões</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Casa%20de%20Gás%202%20Botijões." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="construcao-civil">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586402947-e2sddh.png" alt="Armário de Concreto" loading="lazy"><span class="cat-badge badge-civil">Construção Civil</span></div>
+                <div class="prod-body"><h3>Armário de Concreto</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Armário%20de%20Concreto." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="construcao-civil">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586831993-6fxcr.png" alt="Placa de Concreto" loading="lazy"><span class="cat-badge badge-civil">Construção Civil</span></div>
+                <div class="prod-body"><h3>Placa de Concreto</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Placa%20de%20Concreto." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="construcao-civil">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586855710-p7txug.png" alt="Meia Cana de Concreto" loading="lazy"><span class="cat-badge badge-civil">Construção Civil</span></div>
+                <div class="prod-body"><h3>Meia Cana de Concreto</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Meia%20Cana%20de%20Concreto." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="construcao-civil">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586879282-vsizli.png" alt="Cocho para Animais" loading="lazy"><span class="cat-badge badge-civil">Construção Civil</span></div>
+                <div class="prod-body"><h3>Cocho para Animais</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Cocho%20para%20Animais." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="construcao-civil">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586903154-0uw9aqo.png" alt="Degraus para Escada" loading="lazy"><span class="cat-badge badge-civil">Construção Civil</span></div>
+                <div class="prod-body"><h3>Degraus para Escada</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Degraus%20para%20Escada." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
+            </div>
+            <div class="prod-card" data-cat="construcao-civil">
+                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586924196-qergk2.png" alt="Caixa de Passagem Elétrica" loading="lazy"><span class="cat-badge badge-civil">Construção Civil</span></div>
+                <div class="prod-body"><h3>Caixa de Passagem Elétrica com Tampa</h3><a href="https://wa.me/5518997603980?text=Olá!%20Gostaria%20de%20orçamento%20para%20Caixa%20de%20Passagem%20Elétrica." target="_blank" rel="noopener" class="prod-link">Pedir orçamento →</a></div>
             </div>
 
         </div>
@@ -425,8 +608,8 @@
                 <p class="eyebrow">Sobre a Empresa</p>
                 <h2 class="section-h2">Tradição e qualidade em concreto pré-moldado</h2>
                 <p>A Alfa Soluções em Concreto é especializada na fabricação de produtos pré-moldados de alta qualidade para construção civil, paisagismo e projetos arquitetônicos.</p>
-                <p>Localizada em Araçatuba-SP, nossa estrutura produtiva e controle de qualidade rigoroso garantem produtos que combinam resistência, estética e funcionalidade — do simples ao sofisticado.</p>
-                <p>Com 70 produtos em catálogo, atendemos arquitetos, engenheiros, construtoras e clientes diretos com atendimento personalizado e preços competitivos na região.</p>
+                <p>Localizada em Araçatuba-SP, nossa estrutura produtiva e controle de qualidade rigoroso garantem produtos que combinam resistência, estética e funcionalidade.</p>
+                <p>Com 70 produtos em catálogo, atendemos arquitetos, engenheiros, construtoras e clientes diretos com atendimento personalizado na região.</p>
                 <div class="tag-row">
                     <span class="tag">✔ Concreto Premium</span>
                     <span class="tag">✔ Alta Resistência</span>
@@ -461,30 +644,10 @@
         <h2 class="section-h2">Como nos encontrar</h2>
         <p class="section-lead">Nossa equipe está pronta para apresentar a solução ideal para o seu projeto.</p>
         <div class="contact-grid">
-            <div class="contact-card">
-                <div class="cc-icon">📍</div>
-                <h4>Endereço</h4>
-                <p>R. Antônio Afonso de Toledo, 369</p>
-                <p class="muted">Jardim Sumaré, Araçatuba-SP</p>
-            </div>
-            <div class="contact-card">
-                <div class="cc-icon">☎</div>
-                <h4>Telefones</h4>
-                <a href="tel:+5518997603980">(18) 99760-3980</a>
-                <a href="tel:+5518996769650">(18) 99676-9650</a>
-            </div>
-            <div class="contact-card">
-                <div class="cc-icon">💬</div>
-                <h4>WhatsApp</h4>
-                <a href="https://wa.me/5518997603980" target="_blank" rel="noopener">(18) 99760-3980</a>
-                <p class="muted">Resposta rápida</p>
-            </div>
-            <div class="contact-card">
-                <div class="cc-icon">🕐</div>
-                <h4>Horário</h4>
-                <p>Seg. a Sex.: 7h às 17h</p>
-                <p class="muted">Sábados a consultar</p>
-            </div>
+            <div class="contact-card"><div class="cc-icon">📍</div><h4>Endereço</h4><p>R. Antônio Afonso de Toledo, 369</p><p class="muted">Jardim Sumaré, Araçatuba-SP</p></div>
+            <div class="contact-card"><div class="cc-icon">☎</div><h4>Telefones</h4><a href="tel:+5518997603980">(18) 99760-3980</a><a href="tel:+5518996769650">(18) 99676-9650</a></div>
+            <div class="contact-card"><div class="cc-icon">💬</div><h4>WhatsApp</h4><a href="https://wa.me/5518997603980" target="_blank" rel="noopener">(18) 99760-3980</a><p class="muted">Resposta rápida</p></div>
+            <div class="contact-card"><div class="cc-icon">🕐</div><h4>Horário</h4><p>Seg. a Sex.: 7h às 17h</p><p class="muted">Sábados a consultar</p></div>
         </div>
     </div>
 </section>
@@ -537,5 +700,19 @@
     </svg>
 </a>
 
+<script>
+    const btns = document.querySelectorAll('.cat-btn');
+    const cards = document.querySelectorAll('.prod-card');
+    btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            btns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const cat = btn.dataset.cat;
+            cards.forEach(card => {
+                card.classList.toggle('hidden', cat !== 'all' && card.dataset.cat !== cat);
+            });
+        });
+    });
+</script>
 </body>
 </html>
