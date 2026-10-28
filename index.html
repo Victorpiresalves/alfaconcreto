@@ -1,1003 +1,287 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alfa Soluções em Concreto | Araçatuba - SP</title>
-    <meta name="description" content="Fornecedora de soluções em concreto pré-moldado de alta qualidade. 69 produtos para construção, paisagismo e projetos arquitetônicos em Araçatuba, SP.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        :root {
-            --navy:       #01183D;
-            --blue:       #12457A;
-            --green:      #37C08F;
-            --green-mid:  #2AAE7B;
-            --white:      #F5F5F5;
-            --gray:       #D9D9D9;
-            --gray-light: #EDEDED;
-        }
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; background: var(--white); color: #222; line-height: 1.6; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alfa Soluções em Concreto · Pré-moldados em Araçatuba-SP</title>
+<meta name="description" content="Revestimentos 3D, elementos vazados, mesas, bancos e peças em concreto pré-moldado, sob medida. Fábrica em Araçatuba-SP. 69 produtos no catálogo.">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root { --concreto:#ECEAE6; --concreto-2:#E2DFD9; --linha:#D3CFC7; --grafite:#1E2226; --texto:#3B4046; --suave:#6E737A;
+        --azul:#0B3F78; --azul-2:#06549D; --verde:#019460; --branco:#FAF9F7; }
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0 }
+html { scroll-behavior:smooth }
+body { font-family:'Manrope',system-ui,sans-serif; background:var(--concreto); color:var(--texto); line-height:1.6; -webkit-font-smoothing:antialiased }
+img { display:block; max-width:100% }
+a { color:inherit; text-decoration:none }
+.mono { font-family:'IBM Plex Mono',monospace; font-size:.78rem; letter-spacing:.06em; text-transform:uppercase; color:var(--suave) }
+.wrap { max-width:1240px; margin:0 auto; padding:0 28px }
+h1,h2,h3 { color:var(--grafite); letter-spacing:-.02em; line-height:1.08; font-weight:800 }
+h2 { font-size:clamp(2rem,4vw,3.1rem) }
+.btn { display:inline-flex; align-items:center; gap:10px; padding:16px 26px; font-weight:700; font-size:.95rem; border-radius:2px; transition:.2s }
+.btn-azul { background:var(--azul); color:#fff } .btn-azul:hover { background:var(--azul-2) }
+.btn-linha { border:1.5px solid var(--grafite); color:var(--grafite) } .btn-linha:hover { background:var(--grafite); color:#fff }
+.btn-wa { background:var(--verde); color:#fff } .btn-wa:hover { filter:brightness(1.08) }
 
-        /* TOP BAR */
-        .top-bar { background: var(--green); color: var(--navy); font-size: 0.8rem; font-weight: 600; padding: 7px 24px; text-align: center; }
-        .top-bar a { color: var(--navy); text-decoration: none; }
+/* topo */
+header { position:sticky; top:0; z-index:50; background:rgba(236,234,230,.92); backdrop-filter:blur(10px); border-bottom:1px solid var(--linha) }
+.nav { display:flex; align-items:center; justify-content:space-between; height:78px }
+.nav img { height:52px; width:auto }
+.nav nav { display:flex; gap:34px; align-items:center; font-weight:600; font-size:.92rem }
+.nav nav a:not(.btn):hover { color:var(--azul) }
+.nav .btn { padding:12px 20px }
 
-        /* HEADER */
-        header { background: #fff; position: sticky; top: 0; z-index: 200; box-shadow: 0 2px 12px rgba(0,0,0,0.08); border-bottom: 2px solid var(--gray); }
-        .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 80px; }
-        .logo { display: flex; align-items: center; text-decoration: none; }
-        .logo img { height: 64px; object-fit: contain; }
-        .logo-name { display: none; }
-        nav { display: flex; align-items: center; gap: 4px; }
-        nav a { color: #445; text-decoration: none; font-size: 0.875rem; font-weight: 600; padding: 8px 14px; border-radius: 6px; transition: all 0.2s; }
-        nav a:hover { color: var(--navy); background: var(--gray-light); }
-        .nav-cta { background: var(--green) !important; color: var(--navy) !important; font-weight: 700 !important; padding: 9px 20px !important; margin-left: 8px; }
-        .nav-cta:hover { background: var(--green-mid) !important; color: #fff !important; }
+/* hero */
+.hero { display:grid; grid-template-columns:1.05fr 1fr; min-height:min(calc(100vh - 78px), 820px); border-bottom:1px solid var(--linha) }
+.hero-txt { padding:9vh 56px 8vh 0; display:flex; flex-direction:column; justify-content:center; padding-left:max(28px, calc((100vw - 1240px)/2 + 28px)) }
+.hero h1 { font-size:clamp(2.6rem,5.4vw,4.9rem); margin:22px 0 26px }
+.hero h1 em { font-style:normal; color:var(--azul) }
+.hero p.lead { font-size:1.12rem; max-width:520px; color:var(--texto) }
+.hero .acoes { display:flex; gap:14px; margin-top:38px; flex-wrap:wrap }
+.fatos { display:grid; grid-template-columns:repeat(4,auto); gap:0; margin-top:56px; border-top:1px solid var(--linha) }
+.fatos div { padding:18px 22px 0 0 }
+.fatos b { display:block; font-size:1.35rem; color:var(--grafite); font-weight:800 }
+.hero-img { position:relative; overflow:hidden }
+.hero-img img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 35% }
+.hero-img figcaption { position:absolute; left:20px; bottom:18px; background:rgba(250,249,247,.92); padding:8px 12px }
 
-        /* HERO */
-        .hero { background: linear-gradient(135deg, var(--navy) 0%, #0a2a5e 55%, var(--blue) 100%); position: relative; overflow: hidden; padding: 96px 24px 120px; }
-        .hero::before { content: ''; position: absolute; inset: 0; background: url('./Alfa Solucoes em Concreto_files/hero-1776094806314.png') center/cover no-repeat; opacity: 0.1; }
-        .hero::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 80px; background: linear-gradient(to bottom, transparent, var(--white)); }
-        .hero-inner { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
-        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(55,192,143,0.12); border: 1px solid rgba(55,192,143,0.4); color: var(--green); font-size: 0.75rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 7px 16px; border-radius: 100px; margin-bottom: 28px; }
-        .hero h1 { font-size: clamp(2.2rem, 5.5vw, 3.8rem); font-weight: 800; color: #fff; line-height: 1.08; margin-bottom: 24px; max-width: 680px; letter-spacing: -1px; }
-        .hero h1 span { color: var(--green); }
-        .hero p { font-size: 1.1rem; color: #a0b4cc; max-width: 520px; margin-bottom: 44px; line-height: 1.75; }
-        .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
-        .btn { display: inline-flex; align-items: center; gap: 8px; font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 700; padding: 14px 28px; border-radius: 8px; text-decoration: none; transition: all 0.2s; border: 2px solid transparent; white-space: nowrap; }
-        .btn-green { background: var(--green); color: var(--navy); border-color: var(--green); }
-        .btn-green:hover { background: var(--green-mid); border-color: var(--green-mid); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(55,192,143,0.3); }
-        .btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,0.25); }
-        .btn-ghost:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.06); }
-        .hero-stats { display: flex; gap: 0; margin-top: 72px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 40px; flex-wrap: wrap; }
-        .stat { flex: 1; min-width: 140px; padding: 0 32px 0 0; }
-        .stat + .stat { border-left: 1px solid rgba(255,255,255,0.1); padding-left: 32px; }
-        .stat-num { font-size: 2.4rem; font-weight: 800; color: #fff; line-height: 1; }
-        .stat-num em { color: var(--green); font-style: normal; }
-        .stat-lbl { font-size: 0.82rem; color: #7a9ab8; margin-top: 6px; }
+/* seções */
+section { padding:120px 0; border-bottom:1px solid var(--linha) }
+.sec-head { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:end; margin-bottom:64px }
+.sec-head p { max-width:460px; justify-self:end; color:var(--texto) }
 
-        /* SECTION HELPERS */
-        .section { padding: 88px 24px; }
-        .section-inner { max-width: 1200px; margin: 0 auto; }
-        .eyebrow { font-size: 0.72rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--green); margin-bottom: 14px; }
-        .section-h2 { font-size: clamp(1.7rem, 3.5vw, 2.5rem); font-weight: 800; color: var(--navy); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 16px; }
-        .section-lead { font-size: 1rem; color: #5a6a7a; max-width: 520px; line-height: 1.75; margin-bottom: 48px; }
+/* linhas */
+.linhas { display:grid; grid-template-columns:repeat(5,1fr); border-top:1px solid var(--linha); border-left:1px solid var(--linha) }
+.linha { border-right:1px solid var(--linha); border-bottom:1px solid var(--linha); background:var(--branco); transition:.25s }
+.linha:hover { background:#fff }
+.linha-img { aspect-ratio:1; overflow:hidden; background:#fff }
+.linha-img img { width:100%; height:100%; object-fit:cover; transition:transform .6s }
+.linha:hover .linha-img img { transform:scale(1.05) }
+.linha-txt { padding:22px 22px 28px }
+.linha h3 { font-size:1.25rem; margin:8px 0 8px }
+.linha p { font-size:.9rem; color:var(--suave) }
 
-        /* FEATURES */
-        .features-section { background: var(--navy); }
-        .features-section .section-h2 { color: #fff; }
-        .features-section .section-lead { color: #7a9ab8; }
-        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
-        .feat-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; padding: 36px 28px; transition: all 0.3s; }
-        .feat-card:hover { background: rgba(55,192,143,0.07); border-color: rgba(55,192,143,0.25); transform: translateY(-5px); }
-        .feat-icon { width: 52px; height: 52px; background: rgba(55,192,143,0.13); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin-bottom: 22px; }
-        .feat-card h3 { color: #fff; font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; }
-        .feat-card p { color: #7a9ab8; font-size: 0.88rem; line-height: 1.65; }
+/* ambientes */
+.amb { display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:18px }
+.amb figure { position:relative; overflow:hidden; background:var(--concreto-2) }
+.amb img { width:100%; height:100%; object-fit:cover; aspect-ratio:3/4 }
+.amb figcaption { padding:16px 2px 0 }
+.amb figcaption b { display:block; color:var(--grafite); font-size:1.05rem }
+.nota { margin-top:22px }
 
-        /* CATALOG */
-        .catalog-section { background: var(--gray-light); }
+/* antes x depois */
+.antes { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:80px }
+.antes figure { position:relative }
+.antes .mono { position:absolute; top:16px; left:16px; background:var(--branco); padding:6px 10px; color:var(--grafite) }
+.antes img { aspect-ratio:4/5; object-fit:cover; width:100% }
 
-        .cat-filters {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 40px;
-        }
-        .cat-btn {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.85rem;
-            font-weight: 600;
-            padding: 9px 18px;
-            border-radius: 100px;
-            border: 2px solid var(--gray);
-            background: #fff;
-            color: #556;
-            cursor: pointer;
-            transition: all 0.2s;
-            white-space: nowrap;
-        }
-        .cat-btn:hover { border-color: var(--green); color: var(--green); }
-        .cat-btn.active { background: var(--navy); border-color: var(--navy); color: #fff; }
+/* catálogo */
+.abas { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:34px }
+.aba { font:600 .9rem 'Manrope',sans-serif; background:none; border:1px solid var(--linha); color:var(--texto); padding:11px 18px; cursor:pointer; border-radius:2px; transition:.2s }
+.aba span { font-family:'IBM Plex Mono',monospace; font-size:.75rem; color:var(--suave); margin-left:6px }
+.aba:hover { border-color:var(--grafite) }
+.aba.ativa { background:var(--grafite); border-color:var(--grafite); color:#fff } .aba.ativa span { color:#bfc3c8 }
+.grade { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--linha); border:1px solid var(--linha) }
+.prod { background:var(--branco); display:flex; flex-direction:column; transition:background .2s }
+.prod:hover { background:#fff }
+.prod .ft { aspect-ratio:1; overflow:hidden; background:#fff }
+.prod .ft img { width:100%; height:100%; object-fit:cover; transition:transform .5s }
+.prod:hover .ft img { transform:scale(1.04) }
+.prod .tx { padding:18px 20px 22px; display:flex; justify-content:space-between; gap:12px; align-items:flex-end; flex:1 }
+.prod h4 { font-size:1rem; color:var(--grafite); font-weight:700; line-height:1.3; margin-top:6px }
+.prod .seta { font-size:1.2rem; color:var(--azul); transition:transform .2s }
+.prod:hover .seta { transform:translateX(4px) }
+.esconde { display:none }
 
-        .catalog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 20px;
-        }
-        .prod-card {
-            background: #fff;
-            border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid var(--gray);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            display: flex;
-            flex-direction: column;
-            transition: all 0.3s;
-        }
-        .prod-card:hover { transform: translateY(-6px); box-shadow: 0 14px 40px rgba(1,24,61,0.13); border-color: var(--green); }
-        .prod-card.hidden { display: none; }
-        .prod-thumb {
-            height: 180px;
-            overflow: hidden;
-            background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
-            position: relative;
-        }
-        .prod-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; display: block; }
-        .prod-card:hover .prod-thumb img { transform: scale(1.08); }
-        .cat-badge {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            font-size: 0.65rem;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            padding: 3px 10px;
-            border-radius: 100px;
-            text-transform: uppercase;
-        }
-        .badge-area    { background: #dff5ec; color: #1a7a50; }
-        .badge-rev     { background: #e8f0fb; color: #1a3a7a; }
-        .badge-vaz     { background: #fef3e2; color: #8a5200; }
-        .badge-acab    { background: #f3e8fb; color: #5a1a7a; }
-        .badge-civil   { background: #fde8e8; color: #7a1a1a; }
+/* processo */
+.passos { display:grid; grid-template-columns:repeat(3,1fr); gap:0; border-top:1px solid var(--grafite) }
+.passo { padding:34px 34px 0 0 }
+.passo .n { font-family:'IBM Plex Mono',monospace; font-size:.85rem; color:var(--azul) }
+.passo h3 { font-size:1.5rem; margin:14px 0 10px }
 
-        .prod-body { padding: 16px 18px 20px; flex: 1; display: flex; flex-direction: column; }
-        .prod-body h3 { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 14px; line-height: 1.3; }
-        .prod-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            color: var(--green);
-            font-size: 0.82rem;
-            font-weight: 700;
-            text-decoration: none;
-            margin-top: auto;
-            transition: gap 0.2s, color 0.2s;
-        }
-        .prod-link:hover { gap: 10px; color: var(--green-mid); }
+/* sobre */
+.sobre { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center }
+.sobre img { aspect-ratio:4/5; object-fit:cover; width:100% }
+.sobre p { margin-top:18px }
+.lista { display:grid; grid-template-columns:1fr 1fr; gap:14px 30px; margin-top:34px; padding-top:28px; border-top:1px solid var(--linha) }
+.lista div { font-weight:700; color:var(--grafite); padding-left:18px; position:relative }
+.lista div::before { content:''; position:absolute; left:0; top:.6em; width:8px; height:8px; background:var(--verde) }
 
-        /* ABOUT */
-        .about-section { background: #fff; }
-        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-        .about-visual { border-radius: 16px; overflow: hidden; height: 460px; position: relative; background: linear-gradient(135deg, var(--navy), var(--blue)); }
-        .about-visual img { width: 100%; height: 100%; object-fit: cover; }
-        .about-visual::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(1,24,61,0.5) 0%, transparent 50%); }
-        .about-copy .section-h2 { margin-bottom: 20px; }
-        .about-copy p { color: #5a6a7a; line-height: 1.8; margin-bottom: 16px; font-size: 0.96rem; }
-        .tag-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 36px; }
-        .tag { background: var(--gray-light); border: 1px solid var(--gray); color: var(--navy); font-size: 0.8rem; font-weight: 600; padding: 6px 14px; border-radius: 100px; }
+/* contato */
+.contato { background:var(--grafite); color:#C9CDD2; border:none }
+.contato h2 { color:#fff }
+.contato .mono { color:#8D939A }
+.ct { display:grid; grid-template-columns:1.2fr 1fr; gap:80px }
+.ct dl { display:grid; grid-template-columns:140px 1fr; gap:22px 20px; border-top:1px solid #3A3F45; padding-top:30px }
+.ct dt { font-family:'IBM Plex Mono',monospace; font-size:.78rem; text-transform:uppercase; letter-spacing:.06em; color:#8D939A; padding-top:3px }
+.ct dd { color:#fff; font-weight:600 }
+.ct .acoes { display:flex; gap:14px; flex-wrap:wrap; margin-top:34px }
+.contato .btn-linha { border-color:#fff; color:#fff } .contato .btn-linha:hover { background:#fff; color:var(--grafite) }
+footer { background:var(--grafite); color:#8D939A; border-top:1px solid #3A3F45; padding:28px 0; font-size:.85rem }
+footer .wrap { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap }
+.wa-fixo { position:fixed; right:22px; bottom:22px; width:58px; height:58px; border-radius:50%; background:var(--verde); display:grid; place-items:center; box-shadow:0 8px 24px rgba(0,0,0,.18); z-index:60 }
+.wa-fixo svg { width:30px; height:30px; fill:#fff }
 
-        /* CTA BANNER */
-        .cta-banner { background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%); padding: 72px 24px; }
-        .cta-banner-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
-        .cta-text h2 { font-size: clamp(1.5rem, 3.5vw, 2.1rem); font-weight: 800; color: #fff; line-height: 1.2; max-width: 520px; }
-        .cta-text h2 em { color: var(--green); font-style: normal; }
-        .cta-text p { color: #7a9ab8; font-size: 0.95rem; margin-top: 10px; }
-        .cta-btns { display: flex; gap: 14px; flex-wrap: wrap; }
-
-        /* CONTACT */
-        .contact-section { background: var(--gray-light); }
-        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 24px; }
-        .contact-card { background: #fff; border: 1px solid var(--gray); border-radius: 14px; padding: 32px 24px; text-align: center; transition: all 0.3s; }
-        .contact-card:hover { border-color: var(--green); transform: translateY(-4px); box-shadow: 0 8px 28px rgba(1,24,61,0.08); }
-        .cc-icon { width: 56px; height: 56px; background: rgba(55,192,143,0.1); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 18px; }
-        .contact-card h4 { font-size: 0.72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--green); margin-bottom: 10px; }
-        .contact-card p, .contact-card a { color: var(--navy); font-weight: 600; font-size: 0.95rem; text-decoration: none; display: block; line-height: 1.6; }
-        .contact-card a:hover { color: var(--green); }
-        .contact-card .muted { color: #888; font-size: 0.82rem; font-weight: 400; margin-top: 4px; }
-
-        /* FOOTER */
-        footer { background: var(--navy); color: #7a9ab8; }
-        .footer-body { max-width: 1200px; margin: 0 auto; padding: 64px 24px 48px; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; border-bottom: 1px solid rgba(255,255,255,0.07); }
-        .footer-brand img { height: 42px; filter: brightness(0) invert(1); opacity: 0.9; }
-        .footer-brand p { font-size: 0.86rem; line-height: 1.75; margin-top: 18px; max-width: 240px; }
-        .footer-col h5 { color: #fff; font-size: 0.78rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 20px; }
-        .footer-col ul { list-style: none; }
-        .footer-col li { margin-bottom: 10px; }
-        .footer-col a { color: #7a9ab8; text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
-        .footer-col a:hover { color: var(--green); }
-        .footer-bottom { max-width: 1200px; margin: 0 auto; padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
-        .footer-bottom p { font-size: 0.8rem; color: #445566; }
-        .footer-bottom span { color: var(--green); }
-
-        /* WHATSAPP */
-        .wa-float { position: fixed; bottom: 28px; right: 28px; width: 60px; height: 60px; background: #25D366; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 24px rgba(37,211,102,0.45); z-index: 999; transition: all 0.25s; }
-        .wa-float:hover { transform: scale(1.12); box-shadow: 0 8px 32px rgba(37,211,102,0.55); }
-
-        /* RESPONSIVE */
-        @media (max-width: 900px) {
-            .about-grid { grid-template-columns: 1fr; gap: 40px; }
-            .about-visual { height: 300px; }
-            .footer-body { grid-template-columns: 1fr 1fr; }
-        }
-        @media (max-width: 640px) {
-            nav { display: none; }
-            .hero-stats { flex-direction: column; gap: 24px; }
-            .stat + .stat { border-left: none; border-top: 1px solid rgba(255,255,255,0.1); padding-left: 0; padding-top: 24px; }
-            .cta-banner-inner { flex-direction: column; }
-            .footer-body { grid-template-columns: 1fr; gap: 32px; }
-            .footer-bottom { flex-direction: column; text-align: center; }
-            .catalog-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
-        }
-
-        /* ═══════════════════════════════════════════
-           ANIMAÇÕES PROFISSIONAIS
-        ═══════════════════════════════════════════ */
-        @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-        }
-
-        /* Keyframes */
-        @keyframes fadeSlideUp {
-            from { opacity: 0; transform: translateY(40px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeSlideLeft {
-            from { opacity: 0; transform: translateX(32px); }
-            to   { opacity: 1; transform: translateX(0); }
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to   { opacity: 1; }
-        }
-        @keyframes shimmerBtn {
-            0%   { background-position: 200% center; }
-            100% { background-position: -200% center; }
-        }
-        @keyframes waPulse {
-            0%, 100% { box-shadow: 0 4px 24px rgba(37,211,102,.45); }
-            50%       { box-shadow: 0 4px 36px rgba(37,211,102,.7), 0 0 0 12px rgba(37,211,102,.08); }
-        }
-        @keyframes badgeFloat {
-            0%, 100% { transform: translateY(0px); }
-            50%       { transform: translateY(-5px); }
-        }
-        @keyframes gradientShift {
-            0%   { background-position: 0% 50%; }
-            50%  { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        /* Hero — cascata de entrada */
-        .hero-badge { animation: fadeSlideUp .7s cubic-bezier(.2,.8,.2,1) .1s both; }
-        .hero h1    { animation: fadeSlideUp .8s cubic-bezier(.2,.8,.2,1) .28s both; }
-        .hero p     { animation: fadeSlideUp .7s cubic-bezier(.2,.8,.2,1) .45s both; }
-        .hero-btns  { animation: fadeSlideUp .7s cubic-bezier(.2,.8,.2,1) .6s both; }
-        .hero-stats { animation: fadeIn .9s ease-out .8s both; }
-
-        /* Badge flutua após entrar */
-        .hero-badge-float { animation: fadeSlideUp .7s cubic-bezier(.2,.8,.2,1) .1s both, badgeFloat 3.5s ease-in-out 1s infinite; }
-
-        /* Scroll reveal universal */
-        .rv {
-            opacity: 0;
-            transform: translateY(32px);
-            transition: opacity .6s cubic-bezier(.25,.8,.25,1), transform .6s cubic-bezier(.25,.8,.25,1);
-            will-change: opacity, transform;
-        }
-        .rv.in { opacity: 1; transform: none; }
-
-        /* Delays para stagger */
-        .rv-d0  { transition-delay: 0s; }
-        .rv-d1  { transition-delay: .08s; }
-        .rv-d2  { transition-delay: .16s; }
-        .rv-d3  { transition-delay: .24s; }
-        .rv-d4  { transition-delay: .32s; }
-        .rv-d5  { transition-delay: .40s; }
-        .rv-d6  { transition-delay: .48s; }
-
-        /* Slide da lateral (sobre nós) */
-        .rv-left  { opacity: 0; transform: translateX(-36px); transition: opacity .7s cubic-bezier(.25,.8,.25,1), transform .7s cubic-bezier(.25,.8,.25,1); }
-        .rv-right { opacity: 0; transform: translateX(36px);  transition: opacity .7s cubic-bezier(.25,.8,.25,1), transform .7s cubic-bezier(.25,.8,.25,1); }
-        .rv-left.in, .rv-right.in { opacity: 1; transform: none; }
-
-        /* Botão verde — shimmer no hover */
-        .btn-green {
-            background-image: linear-gradient(90deg, var(--green) 0%, #50d9a0 35%, var(--green-mid) 65%, var(--green) 100%);
-            background-size: 250% auto;
-            transition: background-position .5s ease, transform .2s, box-shadow .2s, border-color .2s;
-        }
-        .btn-green:hover { background-position: right center; }
-
-        /* Header — scroll shadow */
-        header { transition: box-shadow .3s ease; }
-        header.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,.14); }
-
-        /* WhatsApp pulse */
-        .wa-float { animation: waPulse 3s ease-in-out infinite; }
-        .wa-float:hover { animation: none; transform: scale(1.12); box-shadow: 0 8px 32px rgba(37,211,102,.6); }
-
-        /* Cards — spring hover */
-        .prod-card  { will-change: transform; }
-        .feat-card  { will-change: transform; }
-        .contact-card { will-change: transform; }
-
-        /* CTA banner — gradiente animado */
-        .cta-banner {
-            background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 50%, #1a6aab 100%);
-            background-size: 200% 200%;
-            animation: gradientShift 8s ease infinite;
-        }
-
-        /* Top bar — fade in */
-        .top-bar { animation: fadeIn .5s ease-out both; }
-
-        /* Linha separadora animada sob eyebrow */
-        .eyebrow::after {
-            content: '';
-            display: block;
-            width: 0;
-            height: 2px;
-            background: var(--green);
-            margin-top: 6px;
-            border-radius: 2px;
-            transition: width .5s cubic-bezier(.25,.8,.25,1);
-        }
-        .eyebrow.in::after { width: 40px; }
-    </style>
+/* responsivo */
+@media (max-width:1020px) {
+  .hero { grid-template-columns:1fr } .hero-txt { padding:56px 28px } .hero-img { height:min(62vh, 560px) }
+  .linhas { grid-template-columns:repeat(2,1fr) } .grade { grid-template-columns:repeat(3,1fr) }
+  .sec-head, .sobre, .ct { grid-template-columns:1fr; gap:28px } .sec-head p { justify-self:start }
+  .amb { grid-template-columns:1fr 1fr } .amb figure:first-child { grid-column:1 / -1 }
+}
+@media (max-width:640px) {
+  .wrap { padding:0 18px } section { padding:80px 0 }
+  .nav nav a:not(.btn) { display:none } .nav img { height:42px }
+  .fatos { grid-template-columns:1fr 1fr } .grade { grid-template-columns:1fr 1fr }
+    .linhas { grid-template-columns:1fr } .linha { display:grid; grid-template-columns:112px 1fr; align-items:center }
+  .linha-img { aspect-ratio:1 } .linha-txt { padding:14px 16px } .linha p { display:none } .linha h3 { margin:4px 0 0 }
+  .passos { grid-template-columns:1fr } .antes { grid-template-columns:1fr }
+  .amb { grid-template-columns:1fr } .amb figure:nth-child(3) { display:none } .lista { grid-template-columns:1fr } .ct dl { grid-template-columns:1fr; gap:4px }
+  .ct dd { margin-bottom:16px } .prod .tx { padding:14px }
+}
+</style>
 </head>
 <body>
 
-<!-- TOP BAR -->
-<div class="top-bar">
-    ☎&nbsp;<a href="tel:+5518997603980">(18) 99760-3980</a>
-    &nbsp;|&nbsp;<a href="tel:+5518996769650">(18) 99676-9650</a>
-    &nbsp;|&nbsp; Seg. a Sex. 7h–17h
-    &nbsp;|&nbsp; 📍 Jardim Sumaré, Araçatuba-SP
+<header><div class="wrap nav">
+  <a href="#topo"><img src="img/logo.png" alt="Alfa Soluções em Concreto"></a>
+  <nav><a href="#linhas">Linhas</a><a href="#catalogo">Catálogo</a><a href="#como-pedir">Como pedir</a><a href="#sobre">Sobre</a>
+    <a class="btn btn-azul" href="https://wa.me/5518997603980?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento." target="_blank" rel="noopener">Pedir orçamento</a></nav>
+</div></header>
+
+<main id="topo">
+<div class="hero">
+  <div class="hero-txt">
+    <span class="mono">Pré-moldados de concreto · Araçatuba-SP</span>
+    <h1>Solidez, design e resistência <em>em concreto.</em></h1>
+    <p class="lead">Revestimentos 3D, cobogós, mesas, bancos e peças de acabamento produzidos em fábrica própria, com peças sob medida para o seu projeto.</p>
+    <div class="acoes">
+      <a class="btn btn-azul" href="#catalogo">Ver catálogo →</a>
+      <a class="btn btn-linha" href="https://wa.me/5518997603980?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento." target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </div>
+    <div class="fatos">
+      <div><b>69</b><span class="mono">produtos</span></div>
+      <div><b>5</b><span class="mono">linhas</span></div>
+      <div><b>Sob medida</b><span class="mono">projetos especiais</span></div>
+      <div><b>Entrega</b><span class="mono">na região</span></div>
+    </div>
+  </div>
+  <figure class="hero-img"><img src="img/floral-sala.jpg" alt="Sala com parede em revestimento 3D de concreto Floral"><figcaption class="mono">Revestimento Floral · ambiente ilustrativo</figcaption></figure>
 </div>
 
-<!-- HEADER -->
-<header>
-    <div class="header-inner">
-        <a href="#" class="logo">
-            <img src="./alfa%20logo%2001.png" alt="Alfa Soluções em Concreto">
-        </a>
-        <nav>
-            <a href="#produtos">Produtos</a>
-            <a href="#sobre">Sobre Nós</a>
-            <a href="#contato">Contato</a>
-            <a href="https://wa.me/5518997603980" target="_blank" rel="noopener" class="nav-cta">💬 Orçamento</a>
-        </nav>
+<section id="linhas"><div class="wrap">
+  <div class="sec-head"><div><span class="mono">Linhas de produtos</span><h2>Cinco linhas para a obra inteira.</h2></div>
+    <p>Do jardim à fachada: escolha a linha e veja todos os modelos disponíveis no catálogo.</p></div>
+  <div class="linhas">
+      <a class="linha" href="#catalogo" data-filtro="area-lazer">
+        <div class="linha-img"><img src="./Alfa Solucoes em Concreto_files/1775570064684-3ifvag.png" alt="Área e Lazer" loading="lazy"></div>
+        <div class="linha-txt"><span class="mono">01 · 19 produtos</span><h3>Área e Lazer</h3><p>Mesas, bancos, pergolados e cubas para jardins, praças e áreas gourmet.</p></div>
+      </a>
+      <a class="linha" href="#catalogo" data-filtro="revestimento">
+        <div class="linha-img"><img src="./Alfa Solucoes em Concreto_files/1775586269571-o4y6tm.png" alt="Revestimento 3D" loading="lazy"></div>
+        <div class="linha-txt"><span class="mono">02 · 17 produtos</span><h3>Revestimento 3D</h3><p>Placas 3D que transformam paredes lisas em superfícies com relevo e sombra.</p></div>
+      </a>
+      <a class="linha" href="#catalogo" data-filtro="elemento-vazado">
+        <div class="linha-img"><img src="./Alfa Solucoes em Concreto_files/1775586228226-9tk0im.png" alt="Elemento Vazado" loading="lazy"></div>
+        <div class="linha-txt"><span class="mono">03 · 10 produtos</span><h3>Elemento Vazado</h3><p>Cobogós que filtram a luz e ventilam sem perder privacidade.</p></div>
+      </a>
+      <a class="linha" href="#catalogo" data-filtro="acabamento">
+        <div class="linha-img"><img src="./Alfa Solucoes em Concreto_files/1775585951734-xzmr4.png" alt="Acabamento" loading="lazy"></div>
+        <div class="linha-txt"><span class="mono">04 · 15 produtos</span><h3>Acabamento</h3><p>Pisos, guias, capas de muro e peças de acabamento para a obra.</p></div>
+      </a>
+      <a class="linha" href="#catalogo" data-filtro="construcao-civil">
+        <div class="linha-img"><img src="./Alfa Solucoes em Concreto_files/1775585163512-nuv1ij.png" alt="Construção Civil" loading="lazy"></div>
+        <div class="linha-txt"><span class="mono">05 · 8 produtos</span><h3>Construção Civil</h3><p>Casas de gás, caixas, degraus e peças técnicas sob medida.</p></div>
+      </a>
+  </div>
+</div></section>
+
+<section id="ambientes"><div class="wrap">
+  <div class="sec-head"><div><span class="mono">Aplicações</span><h2>A mesma parede, outro projeto.</h2></div>
+    <p>O revestimento em concreto cria relevo, sombra e textura, e a luz faz o resto ao longo do dia.</p></div>
+  <div class="amb">
+    <figure><img src="img/mosaico-varanda.jpg" alt="Varanda gourmet com revestimento Mosaico" loading="lazy"><figcaption><b>Mosaico</b><span class="mono">Varanda gourmet</span></figcaption></figure>
+    <figure><img src="img/escaleno-entrada.jpg" alt="Hall de entrada com revestimento Escaleno" loading="lazy"><figcaption><b>Escaleno</b><span class="mono">Hall de entrada</span></figcaption></figure>
+    <figure><img src="img/floral-sala.jpg" alt="Sala com revestimento Floral" loading="lazy"><figcaption><b>Floral</b><span class="mono">Sala de estar</span></figcaption></figure>
+  </div>
+  <div class="antes">
+    <figure><span class="mono">Antes</span><img src="img/sala-lisa.jpg" alt="Sala com parede lisa" loading="lazy"></figure>
+    <figure><span class="mono">Depois · Floral</span><img src="img/floral-sala.jpg" alt="A mesma sala com revestimento Floral" loading="lazy"></figure>
+  </div>
+  <p class="mono nota">Ambientes ilustrativos com produtos do catálogo.</p>
+</div></section>
+
+<span id="produtos"></span><section id="catalogo"><div class="wrap">
+  <div class="sec-head"><div><span class="mono">Catálogo</span><h2>69 produtos em concreto.</h2></div>
+    <p>Filtre por linha e clique no produto para ver medidas e características.</p></div>
+  <div class="abas">
+        <button class="aba ativa" data-cat="todos">Todos <span>69</span></button>
+        <button class="aba" data-cat="area-lazer">Área e Lazer <span>19</span></button>
+        <button class="aba" data-cat="revestimento">Revestimento 3D <span>17</span></button>
+        <button class="aba" data-cat="elemento-vazado">Elemento Vazado <span>10</span></button>
+        <button class="aba" data-cat="acabamento">Acabamento <span>15</span></button>
+        <button class="aba" data-cat="construcao-civil">Construção Civil <span>8</span></button>
+  </div>
+  <div class="grade" id="grade"></div>
+</div></section>
+
+<section id="como-pedir"><div class="wrap">
+  <div class="sec-head"><div><span class="mono">Como pedir</span><h2>Do modelo ao orçamento em três passos.</h2></div>
+    <p>Atendemos arquitetos, engenheiros, construtoras e clientes diretos.</p></div>
+  <div class="passos">
+    <div class="passo"><span class="n">01</span><h3>Escolha o modelo</h3><p>Navegue pelo catálogo e separe as peças que combinam com o seu projeto.</p></div>
+    <div class="passo"><span class="n">02</span><h3>Envie as medidas</h3><p>Mande pelo WhatsApp a metragem ou a quantidade. Peças sob medida também são possíveis.</p></div>
+    <div class="passo"><span class="n">03</span><h3>Receba o orçamento</h3><p>Orçamento sem compromisso, com entrega na região de Araçatuba.</p></div>
+  </div>
+</div></section>
+
+<section id="sobre"><div class="wrap sobre">
+  <img src="img/escaleno-entrada.jpg" alt="Revestimento em concreto Escaleno" loading="lazy">
+  <div>
+    <span class="mono">Sobre a Alfa</span>
+    <h2>Tradição e qualidade em concreto pré-moldado.</h2>
+    <p>A Alfa Soluções em Concreto fabrica produtos pré-moldados para construção civil, paisagismo e projetos arquitetônicos.</p>
+    <p>Em Araçatuba-SP, nossa estrutura produtiva e o controle de qualidade garantem peças que unem resistência, estética e funcionalidade, com atendimento próximo do início ao fim.</p>
+    <div class="lista"><div>Concreto premium</div><div>Alta resistência</div><div>Peças sob medida</div><div>Entrega na região</div></div>
+  </div>
+</div></section>
+
+<section class="contato" id="contato"><div class="wrap ct">
+  <div>
+    <span class="mono">Contato</span>
+    <h2>Vamos tirar o seu projeto do papel?</h2>
+    <div class="acoes">
+      <a class="btn btn-wa" href="https://wa.me/5518997603980?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento." target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a>
+      <a class="btn btn-linha" href="https://www.google.com/maps/search/?api=1&query=R.+Ant%C3%B4nio+Afonso+de+Toledo,+369,+Ara%C3%A7atuba" target="_blank" rel="noopener">Como chegar</a>
     </div>
-</header>
+  </div>
+  <dl>
+    <dt>Endereço</dt><dd>R. Antônio Afonso de Toledo, 369<br>Jardim Sumaré, Araçatuba-SP</dd>
+    <dt>Telefones</dt><dd>(18) 99760-3980<br>(18) 99676-9650</dd>
+    <dt>Horário</dt><dd>Seg. a sex., 7h às 17h<br>Sábados a consultar</dd>
+  </dl>
+</div></section>
+</main>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-inner">
-        <div class="hero-badge">⬡ Concreto Pré-Moldado de Alta Qualidade</div>
-        <h1>Solidez, Design<br>e <span>Resistência</span><br>em Concreto</h1>
-        <p>Soluções em concreto pré-moldado para construção civil, paisagismo e projetos arquitetônicos. Mais de 70 produtos com durabilidade comprovada em Araçatuba, SP.</p>
-        <div class="hero-btns">
-            <a href="#produtos" class="btn btn-green">Ver Catálogo →</a>
-            <a href="https://wa.me/5518997603980" target="_blank" rel="noopener" class="btn btn-ghost">💬 Solicitar Orçamento</a>
-        </div>
-        <div class="hero-stats">
-            <div class="stat"><div class="stat-num">70<em>+</em></div><div class="stat-lbl">Produtos no catálogo</div></div>
-            <div class="stat"><div class="stat-num">5</div><div class="stat-lbl">Linhas especializadas</div></div>
-            <div class="stat"><div class="stat-num">100<em>%</em></div><div class="stat-lbl">Concreto de alta qualidade</div></div>
-            <div class="stat"><div class="stat-num">Araçatuba</div><div class="stat-lbl">Interior de São Paulo</div></div>
-        </div>
-    </div>
-</section>
+<footer><div class="wrap"><span>© 2026 Alfa Soluções em Concreto · Araçatuba-SP</span><span>Concreto pré-moldado para construção, paisagismo e arquitetura</span></div></footer>
 
-<!-- DIFERENCIAIS -->
-<section class="section features-section" id="diferenciais">
-    <div class="section-inner">
-        <p class="eyebrow">Por que escolher a Alfa</p>
-        <h2 class="section-h2">Qualidade que se vê.<br>Resistência que se prova.</h2>
-        <p class="section-lead">Cada produto é fabricado com rigoroso controle de qualidade, garantindo durabilidade superior e acabamento premium.</p>
-        <div class="features-grid">
-            <div class="feat-card"><div class="feat-icon">🏗️</div><h3>Alta Durabilidade</h3><p>Produtos desenvolvidos para resistir às intempéries e ao desgaste do tempo, mantendo integridade estrutural por décadas.</p></div>
-            <div class="feat-card"><div class="feat-icon">🎨</div><h3>Design Contemporâneo</h3><p>Linha completa com acabamentos variados — fino, terrazzo, rústico e artesanal — para atender qualquer projeto.</p></div>
-            <div class="feat-card"><div class="feat-icon">🔧</div><h3>Baixa Manutenção</h3><p>Concreto pré-moldado com custo de manutenção reduzido e longa vida útil para projetos residenciais e comerciais.</p></div>
-            <div class="feat-card"><div class="feat-icon">📐</div><h3>Sob Medida</h3><p>Capacidade produtiva para atender pedidos personalizados, adaptados às especificações do seu projeto.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- CATÁLOGO COMPLETO -->
-<section class="section catalog-section" id="produtos">
-    <div class="section-inner">
-        <p class="eyebrow">Catálogo Completo</p>
-        <h2 class="section-h2">Todos os Produtos</h2>
-        <p class="section-lead">69 produtos em 5 linhas especializadas. Filtre por categoria ou navegue pelo catálogo completo.</p>
-
-        <div class="cat-filters">
-            <button class="cat-btn active" data-cat="all">Todos (69)</button>
-            <button class="cat-btn" data-cat="area-lazer">🌿 Área e Lazer (19)</button>
-            <button class="cat-btn" data-cat="revestimento">🧱 Revestimento (17)</button>
-            <button class="cat-btn" data-cat="elemento-vazado">🔶 Elemento Vazado (10)</button>
-            <button class="cat-btn" data-cat="acabamento">🪨 Acabamento (15)</button>
-            <button class="cat-btn" data-cat="construcao-civil">🏠 Construção Civil (8)</button>
-        </div>
-
-        <div class="catalog-grid" id="catalogGrid">
-            <div class="prod-card" data-cat="area-lazer">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775570064684-3ifvag.png" alt="Mesa 1 Metro Diâmetro" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
-                <div class="prod-body"><h3>Mesa 1 Metro Diâmetro</h3><a href="produto.html?id=mesa-1m-diametro" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="area-lazer">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775527296176-trw9d.png" alt="Pergolado em Concreto" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
-                <div class="prod-body"><h3>Pergolado em Concreto</h3><a href="produto.html?id=pergolado-concreto" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="area-lazer">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584016766-de9lf.png" alt="Banco Reto 2,00 x 0,45" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
-                <div class="prod-body"><h3>Banco Reto 2,00 x 0,45</h3><a href="produto.html?id=banco-reto-200x045" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="area-lazer">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584058759-zdlgc.png" alt="Mesa 0,80 Metro Diâmetro" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
-                <div class="prod-body"><h3>Mesa 0,80 Metro Diâmetro</h3><a href="produto.html?id=mesa-080-diametro" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="area-lazer">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584081285-ysos58.png" alt="Mesa 0,80 x 0,80" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
-                <div class="prod-body"><h3>Mesa 0,80 x 0,80</h3><a href="produto.html?id=mesa-080x080" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="area-lazer">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584117823-gokpu.png" alt="Mesa Sob Medida" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
-                <div class="prod-body"><h3>Mesa Sob Medida</h3><a href="produto.html?id=mesa-sob-medida" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="area-lazer">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584281728-fa8h7p.png" alt="Banco Reto 1,40 x 0,30" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
-                <div class="prod-body"><h3>Banco Reto 1,40 x 0,30</h3><a href="produto.html?id=banco-reto-140x030" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="area-lazer">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584316864-5rdakx.png" alt="Banco de Encosto Estilo Colonial" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
-                <div class="prod-body"><h3>Banco de Encosto Estilo Colonial</h3><a href="produto.html?id=banco-encosto-colonial" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="area-lazer">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584391310-eqvbi.png" alt="Banco Reto 1,50 x 0,45" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
-                <div class="prod-body"><h3>Banco Reto 1,50 x 0,45</h3><a href="produto.html?id=banco-reto-150x045" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="area-lazer">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584363101-fqf9g8.png" alt="Banco Pés U" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
-                <div class="prod-body"><h3>Banco Pés U</h3><a href="produto.html?id=banco-pes-u" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="area-lazer">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584426556-rng44.png" alt="Lixeira em Concreto Fino" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
-                <div class="prod-body"><h3>Lixeira em Concreto Fino</h3><a href="produto.html?id=lixeira-concreto-fino" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="area-lazer">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584450856-d69n7e.png" alt="Cuba Artesanal" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
-                <div class="prod-body"><h3>Cuba Artesanal</h3><a href="produto.html?id=cuba-artesanal" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="area-lazer">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584477606-bt0i6.png" alt="Cuba Bless" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
-                <div class="prod-body"><h3>Cuba Bless</h3><a href="produto.html?id=cuba-bless" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="area-lazer">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584492649-t9f9bb.png" alt="Cuba Oval Terrazzo" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
-                <div class="prod-body"><h3>Cuba Oval Terrazzo</h3><a href="produto.html?id=cuba-oval-terrazzo" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="area-lazer">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584523438-4lux4g.png" alt="Piso Floral Antiderrapante 4cm" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
-                <div class="prod-body"><h3>Piso Floral Antiderrapante 4cm</h3><a href="produto.html?id=piso-floral" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="area-lazer">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584578815-yxrd7n.png" alt="Piso Trevo 6cm" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
-                <div class="prod-body"><h3>Piso Trevo 6cm</h3><a href="produto.html?id=piso-trevo" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="area-lazer">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584600967-en843j.png" alt="Mesa de Ping Pong" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
-                <div class="prod-body"><h3>Mesa de Ping Pong</h3><a href="produto.html?id=mesa-ping-pong" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="area-lazer">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584620970-d0t4g8.png" alt="Mesa de Futmesa" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
-                <div class="prod-body"><h3>Mesa de Futmesa</h3><a href="produto.html?id=mesa-futmesa" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="area-lazer">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584661177-6we5a.png" alt="Bate Rodas" loading="lazy"><span class="cat-badge badge-area">Área e Lazer</span></div>
-                <div class="prod-body"><h3>Bate Rodas</h3><a href="produto.html?id=bate-rodas" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="revestimento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584691239-mv8r6.png" alt="Abstrata" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
-                <div class="prod-body"><h3>Abstrata</h3><a href="produto.html?id=revestimento-abstrata" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="revestimento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584759008-3y44cn.png" alt="Ripado" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
-                <div class="prod-body"><h3>Ripado</h3><a href="produto.html?id=revestimento-ripado" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="revestimento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584800322-khuvhj.png" alt="Trapézio 3L" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
-                <div class="prod-body"><h3>Trapézio 3L</h3><a href="produto.html?id=revestimento-trapezio-3l" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="revestimento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585707934-c8ffdzdl.png" alt="Tsunami" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
-                <div class="prod-body"><h3>Tsunami</h3><a href="produto.html?id=revestimento-tsunami" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="revestimento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585765579-m1zyrp.png" alt="Zeus" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
-                <div class="prod-body"><h3>Zeus</h3><a href="produto.html?id=revestimento-zeus" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="revestimento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775587052919-tinltp.png" alt="Canjiquinha" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
-                <div class="prod-body"><h3>Canjiquinha</h3><a href="produto.html?id=revestimento-canjiquinha" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="revestimento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775587029441-ewvebq.png" alt="Mini Origame" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
-                <div class="prod-body"><h3>Mini Origame</h3><a href="produto.html?id=revestimento-mini-origame" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="revestimento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586999136-x83zd.png" alt="Origame" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
-                <div class="prod-body"><h3>Origame</h3><a href="produto.html?id=revestimento-origame" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="revestimento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586976232-h3iltd.png" alt="Mosaico" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
-                <div class="prod-body"><h3>Mosaico</h3><a href="produto.html?id=revestimento-mosaico" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="revestimento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586952213-i4utnx.png" alt="Mosaico Liso" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
-                <div class="prod-body"><h3>Mosaico Liso</h3><a href="produto.html?id=revestimento-mosaico-liso" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="revestimento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586924196-qergk2.png" alt="Multplus" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
-                <div class="prod-body"><h3>Multplus</h3><a href="produto.html?id=revestimento-multplus" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="revestimento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586903154-0uw9aqo.png" alt="Escaleno" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
-                <div class="prod-body"><h3>Escaleno</h3><a href="produto.html?id=revestimento-escaleno" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="revestimento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586879282-vsizli.png" alt="Estrutural" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
-                <div class="prod-body"><h3>Estrutural</h3><a href="produto.html?id=revestimento-estrutural" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="revestimento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586855710-p7txug.png" alt="Ripa Cimentícia" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
-                <div class="prod-body"><h3>Ripa Cimentícia</h3><a href="produto.html?id=revestimento-ripa-cimenticia" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="revestimento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586324445-3wormi.png" alt="Filete" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
-                <div class="prod-body"><h3>Filete</h3><a href="produto.html?id=revestimento-filete" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="revestimento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586293094-clkos4.png" alt="KIT 4 Mosaico" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
-                <div class="prod-body"><h3>KIT 4 Mosaico</h3><a href="produto.html?id=revestimento-kit-4-mosaico" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="revestimento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586269571-o4y6tm.png" alt="Floral" loading="lazy"><span class="cat-badge badge-rev">Revestimento</span></div>
-                <div class="prod-body"><h3>Floral</h3><a href="produto.html?id=revestimento-floral" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="elemento-vazado">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586831993-6fxcr.png" alt="Arabela" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
-                <div class="prod-body"><h3>Arabela</h3><a href="produto.html?id=elemento-arabela" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="elemento-vazado">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586402947-e2sddh.png" alt="Margarida" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
-                <div class="prod-body"><h3>Margarida</h3><a href="produto.html?id=elemento-margarida" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="elemento-vazado">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586379102-h18cd.png" alt="16 Furos" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
-                <div class="prod-body"><h3>16 Furos</h3><a href="produto.html?id=elemento-16-furos" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="elemento-vazado">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586357663-irg70b.png" alt="Triângulo" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
-                <div class="prod-body"><h3>Triângulo</h3><a href="produto.html?id=elemento-triangulo" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="elemento-vazado">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775527262878-f71s3.png" alt="Quadriculado" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
-                <div class="prod-body"><h3>Quadriculado</h3><a href="produto.html?id=elemento-quadriculado" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="elemento-vazado">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586228226-9tk0im.png" alt="Mandala" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
-                <div class="prod-body"><h3>Mandala</h3><a href="produto.html?id=elemento-mandala" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="elemento-vazado">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586095860-2yhtx.png" alt="Árabe" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
-                <div class="prod-body"><h3>Árabe</h3><a href="produto.html?id=elemento-arabe" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="elemento-vazado">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775586028034-xfj9u4.png" alt="Taco Chinês" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
-                <div class="prod-body"><h3>Taco Chinês</h3><a href="produto.html?id=elemento-taco-chines" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="elemento-vazado">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585997627-ewdwxq.png" alt="Flor" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
-                <div class="prod-body"><h3>Flor</h3><a href="produto.html?id=elemento-flor" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="elemento-vazado">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585976877-x841sl.png" alt="Anti Chuva" loading="lazy"><span class="cat-badge badge-vaz">Elemento Vazado</span></div>
-                <div class="prod-body"><h3>Anti Chuva</h3><a href="produto.html?id=elemento-anti-chuva" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="acabamento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585951734-xzmr4.png" alt="Ralo em Concreto" loading="lazy"><span class="cat-badge badge-acab">Acabamento em Concreto</span></div>
-                <div class="prod-body"><h3>Ralo em Concreto</h3><a href="produto.html?id=ralo-concreto" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="acabamento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585808230-ukkjfq.png" alt="Chapéu de Pilar" loading="lazy"><span class="cat-badge badge-acab">Acabamento em Concreto</span></div>
-                <div class="prod-body"><h3>Chapéu de Pilar</h3><a href="produto.html?id=chapeu-pilar" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="acabamento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585849283-4r9tyc.png" alt="Capa de Muro" loading="lazy"><span class="cat-badge badge-acab">Acabamento em Concreto</span></div>
-                <div class="prod-body"><h3>Capa de Muro</h3><a href="produto.html?id=capa-muro" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="acabamento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585530608-xtpsz.png" alt="Pingadeira Reta" loading="lazy"><span class="cat-badge badge-acab">Acabamento em Concreto</span></div>
-                <div class="prod-body"><h3>Pingadeira Reta</h3><a href="produto.html?id=pingadeira-reta" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="acabamento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585501825-zshxp.png" alt="Piso de Calçada" loading="lazy"><span class="cat-badge badge-acab">Acabamento em Concreto</span></div>
-                <div class="prod-body"><h3>Piso de Calçada</h3><a href="produto.html?id=piso-calcada" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="acabamento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585476459-kij6or.png" alt="Lajota Sextavada" loading="lazy"><span class="cat-badge badge-acab">Acabamento em Concreto</span></div>
-                <div class="prod-body"><h3>Lajota Sextavada</h3><a href="produto.html?id=lajota-sextavada" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="acabamento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585444958-xmul0w.png" alt="Lajota Quadrada" loading="lazy"><span class="cat-badge badge-acab">Acabamento em Concreto</span></div>
-                <div class="prod-body"><h3>Lajota Quadrada</h3><a href="produto.html?id=lajota-quadrada" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="acabamento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585656714-8c2u1a.png" alt="Pisante Dormente" loading="lazy"><span class="cat-badge badge-acab">Acabamento em Concreto</span></div>
-                <div class="prod-body"><h3>Pisante Dormente</h3><a href="produto.html?id=pisante-dormente" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="acabamento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585411725-5txc2f.png" alt="Piso de Calçada Copacabana" loading="lazy"><span class="cat-badge badge-acab">Acabamento em Concreto</span></div>
-                <div class="prod-body"><h3>Piso de Calçada Copacabana</h3><a href="produto.html?id=piso-calcada-copacabana" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="acabamento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585374318-7x2chv.png" alt="Piso Podotátil Alerta" loading="lazy"><span class="cat-badge badge-acab">Acabamento em Concreto</span></div>
-                <div class="prod-body"><h3>Piso Podotátil Alerta</h3><a href="produto.html?id=piso-podotátil" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="acabamento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585327456-g2xi7n.png" alt="Piso Intertravados" loading="lazy"><span class="cat-badge badge-acab">Acabamento em Concreto</span></div>
-                <div class="prod-body"><h3>Piso Intertravados</h3><a href="produto.html?id=piso-intertravados" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="acabamento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585274846-48a45a.png" alt="Concregrama" loading="lazy"><span class="cat-badge badge-acab">Acabamento em Concreto</span></div>
-                <div class="prod-body"><h3>Concregrama</h3><a href="produto.html?id=concregrama" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="acabamento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585251148-25c6dd.png" alt="Guia de Jardim Ondulada" loading="lazy"><span class="cat-badge badge-acab">Acabamento em Concreto</span></div>
-                <div class="prod-body"><h3>Guia de Jardim Ondulada</h3><a href="produto.html?id=guia-jardim-ondulada" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="acabamento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585232029-c4t8j.png" alt="Pisão de Jardim" loading="lazy"><span class="cat-badge badge-acab">Acabamento em Concreto</span></div>
-                <div class="prod-body"><h3>Pisão de Jardim</h3><a href="produto.html?id=pisao-jardim" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="acabamento">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585206494-mkjtn7.png" alt="Guia" loading="lazy"><span class="cat-badge badge-acab">Acabamento em Concreto</span></div>
-                <div class="prod-body"><h3>Guia</h3><a href="produto.html?id=guia" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="construcao-civil">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585163512-nuv1ij.png" alt="Casa de Gás 2 Botijão" loading="lazy"><span class="cat-badge badge-civil">Construção Civil</span></div>
-                <div class="prod-body"><h3>Casa de Gás 2 Botijão</h3><a href="produto.html?id=casa-gas-2-botijao" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="construcao-civil">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585141246-0yrg5p.png" alt="Casa de Gás 1 Botijão" loading="lazy"><span class="cat-badge badge-civil">Construção Civil</span></div>
-                <div class="prod-body"><h3>Casa de Gás 1 Botijão</h3><a href="produto.html?id=casa-gas-1-botijao" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="construcao-civil">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585119022-qccckz.png" alt="Armário de Concreto" loading="lazy"><span class="cat-badge badge-civil">Construção Civil</span></div>
-                <div class="prod-body"><h3>Armário de Concreto</h3><a href="produto.html?id=armario-concreto" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="construcao-civil">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585102441-1k32bp.png" alt="Placa de Concreto" loading="lazy"><span class="cat-badge badge-civil">Construção Civil</span></div>
-                <div class="prod-body"><h3>Placa de Concreto</h3><a href="produto.html?id=placa-concreto" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="construcao-civil">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585018672-9zzbr.png" alt="Meia Cana de Concreto" loading="lazy"><span class="cat-badge badge-civil">Construção Civil</span></div>
-                <div class="prod-body"><h3>Meia Cana de Concreto</h3><a href="produto.html?id=meia-cana" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="construcao-civil">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585049039-qsjm5r.png" alt="Cocho" loading="lazy"><span class="cat-badge badge-civil">Construção Civil</span></div>
-                <div class="prod-body"><h3>Cocho</h3><a href="produto.html?id=cocho" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="construcao-civil">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775585588007-ywr24.png" alt="Degraus para Escada" loading="lazy"><span class="cat-badge badge-civil">Construção Civil</span></div>
-                <div class="prod-body"><h3>Degraus para Escada</h3><a href="produto.html?id=degraus-escada" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-            <div class="prod-card" data-cat="construcao-civil">
-                <div class="prod-thumb"><img src="./Alfa Solucoes em Concreto_files/1775584996094-p5jhxe.png" alt="Caixa de Passagem Elétrica c/ Tampa" loading="lazy"><span class="cat-badge badge-civil">Construção Civil</span></div>
-                <div class="prod-body"><h3>Caixa de Passagem Elétrica c/ Tampa</h3><a href="produto.html?id=caixa-passagem-eletrica" target="_blank" rel="noopener" class="prod-link">Ver produto →</a></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- SOBRE -->
-<section class="section about-section" id="sobre">
-    <div class="section-inner">
-        <div class="about-grid">
-            <div class="about-visual">
-                <img src="./Alfa Solucoes em Concreto_files/hero-1776094806314.png" alt="Alfa Soluções em Concreto">
-            </div>
-            <div class="about-copy">
-                <p class="eyebrow">Sobre a Empresa</p>
-                <h2 class="section-h2">Tradição e qualidade em concreto pré-moldado</h2>
-                <p>A Alfa Soluções em Concreto é especializada na fabricação de produtos pré-moldados de alta qualidade para construção civil, paisagismo e projetos arquitetônicos.</p>
-                <p>Localizada em Araçatuba-SP, nossa estrutura produtiva e controle de qualidade rigoroso garantem produtos que combinam resistência, estética e funcionalidade.</p>
-                <p>Com 69 produtos em catálogo, atendemos arquitetos, engenheiros, construtoras e clientes diretos com atendimento personalizado na região.</p>
-                <div class="tag-row">
-                    <span class="tag">✔ Concreto Premium</span>
-                    <span class="tag">✔ Alta Resistência</span>
-                    <span class="tag">✔ Entrega na Região</span>
-                    <span class="tag">✔ Produtos Sob Medida</span>
-                    <span class="tag">✔ Orçamento sem Compromisso</span>
-                </div>
-                <a href="https://wa.me/5518997603980" target="_blank" rel="noopener" class="btn btn-green">💬 Falar com um Especialista</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CTA BANNER -->
-<div class="cta-banner">
-    <div class="cta-banner-inner">
-        <div class="cta-text">
-            <h2>Pronto para transformar seu projeto com <em>concreto de qualidade?</em></h2>
-            <p>Solicite um orçamento sem compromisso. Atendemos toda a região de Araçatuba.</p>
-        </div>
-        <div class="cta-btns">
-            <a href="https://wa.me/5518997603980" target="_blank" rel="noopener" class="btn btn-green">💬 WhatsApp</a>
-            <a href="tel:+5518997603980" class="btn btn-ghost">☎ (18) 99760-3980</a>
-        </div>
-    </div>
-</div>
-
-<!-- CONTATO -->
-<section class="section contact-section" id="contato">
-    <div class="section-inner">
-        <p class="eyebrow">Entre em Contato</p>
-        <h2 class="section-h2">Como nos encontrar</h2>
-        <p class="section-lead">Nossa equipe está pronta para apresentar a solução ideal para o seu projeto.</p>
-        <div class="contact-grid">
-            <div class="contact-card"><div class="cc-icon">📍</div><h4>Endereço</h4><p>R. Antônio Afonso de Toledo, 369</p><p class="muted">Jardim Sumaré, Araçatuba-SP</p></div>
-            <div class="contact-card"><div class="cc-icon">☎</div><h4>Telefones</h4><a href="tel:+5518997603980">(18) 99760-3980</a><a href="tel:+5518996769650">(18) 99676-9650</a></div>
-            <div class="contact-card"><div class="cc-icon">💬</div><h4>WhatsApp</h4><a href="https://wa.me/5518997603980" target="_blank" rel="noopener">(18) 99760-3980</a><p class="muted">Resposta rápida</p></div>
-            <div class="contact-card"><div class="cc-icon">🕐</div><h4>Horário</h4><p>Seg. a Sex.: 7h às 17h</p><p class="muted">Sábados a consultar</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-    <div class="footer-body">
-        <div class="footer-brand">
-            <img src="./Alfa Solucoes em Concreto_files/logo-1776094285393.png" alt="Alfa Soluções em Concreto">
-            <p>Fornecedora de soluções em concreto pré-moldado de alta qualidade para construção civil, paisagismo e projetos arquitetônicos em Araçatuba, SP.</p>
-        </div>
-        <div class="footer-col">
-            <h5>Produtos</h5>
-            <ul>
-                <li><a href="#produtos">Área e Lazer</a></li>
-                <li><a href="#produtos">Revestimento</a></li>
-                <li><a href="#produtos">Elemento Vazado</a></li>
-                <li><a href="#produtos">Acabamento</a></li>
-                <li><a href="#produtos">Construção Civil</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h5>Empresa</h5>
-            <ul>
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#diferenciais">Diferenciais</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h5>Contato</h5>
-            <ul>
-                <li><a href="tel:+5518997603980">(18) 99760-3980</a></li>
-                <li><a href="tel:+5518996769650">(18) 99676-9650</a></li>
-                <li><a href="https://wa.me/5518997603980" target="_blank" rel="noopener">WhatsApp</a></li>
-                <li><a href="#contato">Araçatuba — SP</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>© 2025 <span>Alfa Soluções em Concreto</span>. Todos os direitos reservados.</p>
-        <p>Jardim Sumaré, Araçatuba — SP</p>
-    </div>
-</footer>
-
-<!-- WHATSAPP FLUTUANTE -->
-<a href="https://wa.me/5518997603980" target="_blank" rel="noopener" class="wa-float" title="Fale conosco pelo WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
-</a>
+<a class="wa-fixo" href="https://wa.me/5518997603980?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.4-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.4-.3z"/></svg></a>
 
 <script>
-    // Filtro por categoria
-    const btns = document.querySelectorAll('.cat-btn');
-    const cards = document.querySelectorAll('.prod-card');
-    btns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            btns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            const cat = btn.dataset.cat;
-            cards.forEach(card => {
-                card.classList.toggle('hidden', cat !== 'all' && card.dataset.cat !== cat);
-            });
-        });
-    });
-
-    // Mapa: nome do produto (h3) → id na página produto.html
-    const prodMap = {
-      'Mesa 1 Metro Diâmetro': 'mesa-1m-diametro',
-      'Pergolado em Concreto': 'pergolado-concreto',
-      'Banco Reto 2,00 x 0,45': 'banco-reto-200x045',
-      'Mesa 0,80 Metro Diâmetro': 'mesa-080-diametro',
-      'Mesa 0,80 x 0,80': 'mesa-080x080',
-      'Mesa Sob Medida': 'mesa-sob-medida',
-      'Banco Reto 1,40 x 0,30': 'banco-reto-140x030',
-      'Banco de Encosto Estilo Colonial': 'banco-encosto-colonial',
-      'Banco Reto 1,50 x 0,45': 'banco-reto-150x045',
-      'Banco Pés U': 'banco-pes-u',
-      'Lixeira em Concreto Fino': 'lixeira-concreto-fino',
-      'Cuba Artesanal': 'cuba-artesanal',
-      'Cuba Bless': 'cuba-bless',
-      'Cuba Oval Terrazzo': 'cuba-oval-terrazzo',
-      'Piso Floral Antiderrapante 4cm': 'piso-floral',
-      'Piso Trevo 6cm': 'piso-trevo',
-      'Mesa de Ping Pong': 'mesa-ping-pong',
-      'Mesa de Futmesa': 'mesa-futmesa',
-      'Bate Rodas': 'bate-rodas',
-      'Abstrata': 'revestimento-abstrata',
-      'Ripado': 'revestimento-ripado',
-      'Trapézio 3L': 'revestimento-trapezio-3l',
-      'Tsunami': 'revestimento-tsunami',
-      'Zeus': 'revestimento-zeus',
-      'Canjiquinha': 'revestimento-canjiquinha',
-      'Mini Origame': 'revestimento-mini-origame',
-      'Origame': 'revestimento-origame',
-      'Mosaico': 'revestimento-mosaico',
-      'Mosaico Liso': 'revestimento-mosaico-liso',
-      'Multplus': 'revestimento-multplus',
-      'Escaleno': 'revestimento-escaleno',
-      'Estrutural': 'revestimento-estrutural',
-      'Ripa Cimentícia': 'revestimento-ripa-cimenticia',
-      'Filete': 'revestimento-filete',
-      'KIT 4 Mosaico': 'revestimento-kit-4-mosaico',
-      'Floral': 'revestimento-floral',
-      'Arabela': 'elemento-arabela',
-      'Margarida': 'elemento-margarida',
-      '16 Furos': 'elemento-16-furos',
-      'Triângulo': 'elemento-triangulo',
-      'Quadriculado': 'elemento-quadriculado',
-      'Mandala': 'elemento-mandala',
-      'Árabe': 'elemento-arabe',
-      'Taco Chinês': 'elemento-taco-chines',
-      'Flor': 'elemento-flor',
-      'Anti Chuva': 'elemento-anti-chuva',
-      'Ralo em Concreto': 'ralo-concreto',
-      'Chapéu de Pilar': 'chapeu-pilar',
-      'Capa de Muro': 'capa-muro',
-      'Pingadeira Reta': 'pingadeira-reta',
-      'Piso de Calçada': 'piso-calcada',
-      'Lajota Sextavada': 'lajota-sextavada',
-      'Lajota Quadrada': 'lajota-quadrada',
-      'Pisante Dormente': 'pisante-dormente',
-      'Piso de Calçada Copacabana': 'piso-calcada-copacabana',
-      'Piso Podotátil Alerta': 'piso-podotátil',
-      'Piso Intertravados': 'piso-intertravados',
-      'Concregrama': 'concregrama',
-      'Guia de Jardim Ondulada': 'guia-jardim-ondulada',
-      'Pisão de Jardim': 'pisao-jardim',
-      'Guia': 'guia',
-      'Casa de Gás 2 Botijão': 'casa-gas-2-botijao',
-      'Casa de Gás 1 Botijão': 'casa-gas-1-botijao',
-      'Armário de Concreto': 'armario-concreto',
-      'Placa de Concreto': 'placa-concreto',
-      'Meia Cana de Concreto': 'meia-cana',
-      'Cocho': 'cocho',
-      'Degraus para Escada': 'degraus-escada',
-      'Caixa de Passagem Elétrica c/ Tampa': 'caixa-passagem-eletrica',
-    };
-
-    // Torna cada card clicável abrindo produto.html em nova aba
-    document.querySelectorAll('.prod-card').forEach(card => {
-        const nome = card.querySelector('h3')?.textContent?.trim();
-        const id = prodMap[nome];
-        if (!id) return;
-        const url = 'produto.html?id=' + id;
-        const link = card.querySelector('.prod-link');
-        if (link) { link.href = url; link.target = '_blank'; link.textContent = 'Ver produto →'; }
-        card.style.cursor = 'pointer';
-        card.addEventListener('click', e => {
-            if (e.target.closest('a')) return;
-            window.open(url, '_blank');
-        });
-    });
-
-    /* ═══════════════════════════════════════════════════
-       ANIMAÇÕES — INTERSECTION OBSERVER
-    ═══════════════════════════════════════════════════ */
-
-    // Badge do hero flutua após entrada
-    setTimeout(() => {
-        const badge = document.querySelector('.hero-badge');
-        if (badge) badge.classList.add('hero-badge-float');
-    }, 1200);
-
-    // Header encolhe levemente ao rolar
-    window.addEventListener('scroll', () => {
-        document.querySelector('header').classList.toggle('scrolled', window.scrollY > 50);
-    }, { passive: true });
-
-    // Observer genérico para .rv, .rv-left, .rv-right, .eyebrow
-    const revealObs = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) return;
-            entry.target.classList.add('in');
-            revealObs.unobserve(entry.target);
-        });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-    // Adiciona .rv automaticamente às seções principais
-    const revealSelectors = [
-        '.eyebrow', '.section-h2', '.section-lead',
-        '.feat-card', '.about-visual', '.about-copy',
-        '.contact-card', '.cta-text', '.cta-btns',
-        '.footer-brand', '.footer-col', '.tag'
-    ];
-    revealSelectors.forEach(sel => {
-        document.querySelectorAll(sel).forEach((el, i) => {
-            if (!el.classList.contains('rv') && !el.classList.contains('rv-left')) {
-                el.classList.add('rv', `rv-d${Math.min(i % 4, 6)}`);
-            }
-            revealObs.observe(el);
-        });
-    });
-
-    // Slide lateral na seção Sobre
-    const aboutVisual = document.querySelector('.about-visual');
-    const aboutCopy   = document.querySelector('.about-copy');
-    if (aboutVisual) { aboutVisual.classList.add('rv-left'); revealObs.observe(aboutVisual); }
-    if (aboutCopy)   { aboutCopy.classList.add('rv-right');  revealObs.observe(aboutCopy); }
-
-    // Stagger para product cards — agrupa em lotes de 6 por visibilidade
-    let cardBatch = 0;
-    const cardObs = new IntersectionObserver((entries) => {
-        const visible = entries.filter(e => e.isIntersecting);
-        visible.forEach((entry, i) => {
-            const el = entry.target;
-            const delay = (cardBatch % 6) * 90;
-            el.style.transitionDelay = delay + 'ms';
-            el.classList.add('rv', 'in');
-            cardBatch++;
-            cardObs.unobserve(el);
-        });
-    }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
-
-    document.querySelectorAll('.prod-card').forEach(card => {
-        card.classList.add('rv');
-        cardObs.observe(card);
-    });
-
-    // Animação de contagem para estatísticas do hero
-    function animateCount(el, target, suffix, duration = 1600) {
-        const start = performance.now();
-        const step = (now) => {
-            const t = Math.min((now - start) / duration, 1);
-            const eased = 1 - Math.pow(1 - t, 3);
-            el.textContent = Math.floor(eased * target) + suffix;
-            if (t < 1) requestAnimationFrame(step);
-        };
-        requestAnimationFrame(step);
-    }
-
-    // Dispara counters quando stats entram na tela
-    const statsEl = document.querySelector('.hero-stats');
-    if (statsEl) {
-        const statsObs = new IntersectionObserver(([entry]) => {
-            if (!entry.isIntersecting) return;
-            statsObs.disconnect();
-            const nums = statsEl.querySelectorAll('.stat-num');
-            // 70+, 5, 100%
-            const data = [{ val: 70, suf: '+' }, { val: 5, suf: '' }, { val: 100, suf: '%' }];
-            nums.forEach((el, i) => {
-                if (data[i]) animateCount(el, data[i].val, data[i].suf);
-            });
-        }, { threshold: 0.5 });
-        statsObs.observe(statsEl);
-    }
-
-    // Inicia reveal dos elementos já visíveis na tela ao carregar
-    document.querySelectorAll('.rv, .rv-left, .rv-right, .eyebrow').forEach(el => {
-        revealObs.observe(el);
-    });
+const CAT = {"area-lazer": "Área e Lazer", "revestimento": "Revestimento 3D", "elemento-vazado": "Elemento Vazado", "acabamento": "Acabamento", "construcao-civil": "Construção Civil"};
+const P = [{"c": "area-lazer", "i": "./Alfa Solucoes em Concreto_files/1775570064684-3ifvag.png", "n": "Mesa 1 Metro Diâmetro", "id": "mesa-1m-diametro"}, {"c": "area-lazer", "i": "./Alfa Solucoes em Concreto_files/1775527296176-trw9d.png", "n": "Pergolado em Concreto", "id": "pergolado-concreto"}, {"c": "area-lazer", "i": "./Alfa Solucoes em Concreto_files/1775584016766-de9lf.png", "n": "Banco Reto 2,00 x 0,45", "id": "banco-reto-200x045"}, {"c": "area-lazer", "i": "./Alfa Solucoes em Concreto_files/1775584058759-zdlgc.png", "n": "Mesa 0,80 Metro Diâmetro", "id": "mesa-080-diametro"}, {"c": "area-lazer", "i": "./Alfa Solucoes em Concreto_files/1775584081285-ysos58.png", "n": "Mesa 0,80 x 0,80", "id": "mesa-080x080"}, {"c": "area-lazer", "i": "./Alfa Solucoes em Concreto_files/1775584117823-gokpu.png", "n": "Mesa Sob Medida", "id": "mesa-sob-medida"}, {"c": "area-lazer", "i": "./Alfa Solucoes em Concreto_files/1775584281728-fa8h7p.png", "n": "Banco Reto 1,40 x 0,30", "id": "banco-reto-140x030"}, {"c": "area-lazer", "i": "./Alfa Solucoes em Concreto_files/1775584316864-5rdakx.png", "n": "Banco de Encosto Estilo Colonial", "id": "banco-encosto-colonial"}, {"c": "area-lazer", "i": "./Alfa Solucoes em Concreto_files/1775584391310-eqvbi.png", "n": "Banco Reto 1,50 x 0,45", "id": "banco-reto-150x045"}, {"c": "area-lazer", "i": "./Alfa Solucoes em Concreto_files/1775584363101-fqf9g8.png", "n": "Banco Pés U", "id": "banco-pes-u"}, {"c": "area-lazer", "i": "./Alfa Solucoes em Concreto_files/1775584426556-rng44.png", "n": "Lixeira em Concreto Fino", "id": "lixeira-concreto-fino"}, {"c": "area-lazer", "i": "./Alfa Solucoes em Concreto_files/1775584450856-d69n7e.png", "n": "Cuba Artesanal", "id": "cuba-artesanal"}, {"c": "area-lazer", "i": "./Alfa Solucoes em Concreto_files/1775584477606-bt0i6.png", "n": "Cuba Bless", "id": "cuba-bless"}, {"c": "area-lazer", "i": "./Alfa Solucoes em Concreto_files/1775584492649-t9f9bb.png", "n": "Cuba Oval Terrazzo", "id": "cuba-oval-terrazzo"}, {"c": "area-lazer", "i": "./Alfa Solucoes em Concreto_files/1775584523438-4lux4g.png", "n": "Piso Floral Antiderrapante 4cm", "id": "piso-floral"}, {"c": "area-lazer", "i": "./Alfa Solucoes em Concreto_files/1775584578815-yxrd7n.png", "n": "Piso Trevo 6cm", "id": "piso-trevo"}, {"c": "area-lazer", "i": "./Alfa Solucoes em Concreto_files/1775584600967-en843j.png", "n": "Mesa de Ping Pong", "id": "mesa-ping-pong"}, {"c": "area-lazer", "i": "./Alfa Solucoes em Concreto_files/1775584620970-d0t4g8.png", "n": "Mesa de Futmesa", "id": "mesa-futmesa"}, {"c": "area-lazer", "i": "./Alfa Solucoes em Concreto_files/1775584661177-6we5a.png", "n": "Bate Rodas", "id": "bate-rodas"}, {"c": "revestimento", "i": "./Alfa Solucoes em Concreto_files/1775584691239-mv8r6.png", "n": "Abstrata", "id": "revestimento-abstrata"}, {"c": "revestimento", "i": "./Alfa Solucoes em Concreto_files/1775584759008-3y44cn.png", "n": "Ripado", "id": "revestimento-ripado"}, {"c": "revestimento", "i": "./Alfa Solucoes em Concreto_files/1775584800322-khuvhj.png", "n": "Trapézio 3L", "id": "revestimento-trapezio-3l"}, {"c": "revestimento", "i": "./Alfa Solucoes em Concreto_files/1775585707934-c8ffdzdl.png", "n": "Tsunami", "id": "revestimento-tsunami"}, {"c": "revestimento", "i": "./Alfa Solucoes em Concreto_files/1775585765579-m1zyrp.png", "n": "Zeus", "id": "revestimento-zeus"}, {"c": "revestimento", "i": "./Alfa Solucoes em Concreto_files/1775587052919-tinltp.png", "n": "Canjiquinha", "id": "revestimento-canjiquinha"}, {"c": "revestimento", "i": "./Alfa Solucoes em Concreto_files/1775587029441-ewvebq.png", "n": "Mini Origame", "id": "revestimento-mini-origame"}, {"c": "revestimento", "i": "./Alfa Solucoes em Concreto_files/1775586999136-x83zd.png", "n": "Origame", "id": "revestimento-origame"}, {"c": "revestimento", "i": "./Alfa Solucoes em Concreto_files/1775586976232-h3iltd.png", "n": "Mosaico", "id": "revestimento-mosaico"}, {"c": "revestimento", "i": "./Alfa Solucoes em Concreto_files/1775586952213-i4utnx.png", "n": "Mosaico Liso", "id": "revestimento-mosaico-liso"}, {"c": "revestimento", "i": "./Alfa Solucoes em Concreto_files/1775586924196-qergk2.png", "n": "Multplus", "id": "revestimento-multplus"}, {"c": "revestimento", "i": "./Alfa Solucoes em Concreto_files/1775586903154-0uw9aqo.png", "n": "Escaleno", "id": "revestimento-escaleno"}, {"c": "revestimento", "i": "./Alfa Solucoes em Concreto_files/1775586879282-vsizli.png", "n": "Estrutural", "id": "revestimento-estrutural"}, {"c": "revestimento", "i": "./Alfa Solucoes em Concreto_files/1775586855710-p7txug.png", "n": "Ripa Cimentícia", "id": "revestimento-ripa-cimenticia"}, {"c": "revestimento", "i": "./Alfa Solucoes em Concreto_files/1775586324445-3wormi.png", "n": "Filete", "id": "revestimento-filete"}, {"c": "revestimento", "i": "./Alfa Solucoes em Concreto_files/1775586293094-clkos4.png", "n": "KIT 4 Mosaico", "id": "revestimento-kit-4-mosaico"}, {"c": "revestimento", "i": "./Alfa Solucoes em Concreto_files/1775586269571-o4y6tm.png", "n": "Floral", "id": "revestimento-floral"}, {"c": "elemento-vazado", "i": "./Alfa Solucoes em Concreto_files/1775586831993-6fxcr.png", "n": "Arabela", "id": "elemento-arabela"}, {"c": "elemento-vazado", "i": "./Alfa Solucoes em Concreto_files/1775586402947-e2sddh.png", "n": "Margarida", "id": "elemento-margarida"}, {"c": "elemento-vazado", "i": "./Alfa Solucoes em Concreto_files/1775586379102-h18cd.png", "n": "16 Furos", "id": "elemento-16-furos"}, {"c": "elemento-vazado", "i": "./Alfa Solucoes em Concreto_files/1775586357663-irg70b.png", "n": "Triângulo", "id": "elemento-triangulo"}, {"c": "elemento-vazado", "i": "./Alfa Solucoes em Concreto_files/1775527262878-f71s3.png", "n": "Quadriculado", "id": "elemento-quadriculado"}, {"c": "elemento-vazado", "i": "./Alfa Solucoes em Concreto_files/1775586228226-9tk0im.png", "n": "Mandala", "id": "elemento-mandala"}, {"c": "elemento-vazado", "i": "./Alfa Solucoes em Concreto_files/1775586095860-2yhtx.png", "n": "Árabe", "id": "elemento-arabe"}, {"c": "elemento-vazado", "i": "./Alfa Solucoes em Concreto_files/1775586028034-xfj9u4.png", "n": "Taco Chinês", "id": "elemento-taco-chines"}, {"c": "elemento-vazado", "i": "./Alfa Solucoes em Concreto_files/1775585997627-ewdwxq.png", "n": "Flor", "id": "elemento-flor"}, {"c": "elemento-vazado", "i": "./Alfa Solucoes em Concreto_files/1775585976877-x841sl.png", "n": "Anti Chuva", "id": "elemento-anti-chuva"}, {"c": "acabamento", "i": "./Alfa Solucoes em Concreto_files/1775585951734-xzmr4.png", "n": "Ralo em Concreto", "id": "ralo-concreto"}, {"c": "acabamento", "i": "./Alfa Solucoes em Concreto_files/1775585808230-ukkjfq.png", "n": "Chapéu de Pilar", "id": "chapeu-pilar"}, {"c": "acabamento", "i": "./Alfa Solucoes em Concreto_files/1775585849283-4r9tyc.png", "n": "Capa de Muro", "id": "capa-muro"}, {"c": "acabamento", "i": "./Alfa Solucoes em Concreto_files/1775585530608-xtpsz.png", "n": "Pingadeira Reta", "id": "pingadeira-reta"}, {"c": "acabamento", "i": "./Alfa Solucoes em Concreto_files/1775585501825-zshxp.png", "n": "Piso de Calçada", "id": "piso-calcada"}, {"c": "acabamento", "i": "./Alfa Solucoes em Concreto_files/1775585476459-kij6or.png", "n": "Lajota Sextavada", "id": "lajota-sextavada"}, {"c": "acabamento", "i": "./Alfa Solucoes em Concreto_files/1775585444958-xmul0w.png", "n": "Lajota Quadrada", "id": "lajota-quadrada"}, {"c": "acabamento", "i": "./Alfa Solucoes em Concreto_files/1775585656714-8c2u1a.png", "n": "Pisante Dormente", "id": "pisante-dormente"}, {"c": "acabamento", "i": "./Alfa Solucoes em Concreto_files/1775585411725-5txc2f.png", "n": "Piso de Calçada Copacabana", "id": "piso-calcada-copacabana"}, {"c": "acabamento", "i": "./Alfa Solucoes em Concreto_files/1775585374318-7x2chv.png", "n": "Piso Podotátil Alerta", "id": "piso-podotátil"}, {"c": "acabamento", "i": "./Alfa Solucoes em Concreto_files/1775585327456-g2xi7n.png", "n": "Piso Intertravados", "id": "piso-intertravados"}, {"c": "acabamento", "i": "./Alfa Solucoes em Concreto_files/1775585274846-48a45a.png", "n": "Concregrama", "id": "concregrama"}, {"c": "acabamento", "i": "./Alfa Solucoes em Concreto_files/1775585251148-25c6dd.png", "n": "Guia de Jardim Ondulada", "id": "guia-jardim-ondulada"}, {"c": "acabamento", "i": "./Alfa Solucoes em Concreto_files/1775585232029-c4t8j.png", "n": "Pisão de Jardim", "id": "pisao-jardim"}, {"c": "acabamento", "i": "./Alfa Solucoes em Concreto_files/1775585206494-mkjtn7.png", "n": "Guia", "id": "guia"}, {"c": "construcao-civil", "i": "./Alfa Solucoes em Concreto_files/1775585163512-nuv1ij.png", "n": "Casa de Gás 2 Botijão", "id": "casa-gas-2-botijao"}, {"c": "construcao-civil", "i": "./Alfa Solucoes em Concreto_files/1775585141246-0yrg5p.png", "n": "Casa de Gás 1 Botijão", "id": "casa-gas-1-botijao"}, {"c": "construcao-civil", "i": "./Alfa Solucoes em Concreto_files/1775585119022-qccckz.png", "n": "Armário de Concreto", "id": "armario-concreto"}, {"c": "construcao-civil", "i": "./Alfa Solucoes em Concreto_files/1775585102441-1k32bp.png", "n": "Placa de Concreto", "id": "placa-concreto"}, {"c": "construcao-civil", "i": "./Alfa Solucoes em Concreto_files/1775585018672-9zzbr.png", "n": "Meia Cana de Concreto", "id": "meia-cana"}, {"c": "construcao-civil", "i": "./Alfa Solucoes em Concreto_files/1775585049039-qsjm5r.png", "n": "Cocho", "id": "cocho"}, {"c": "construcao-civil", "i": "./Alfa Solucoes em Concreto_files/1775585588007-ywr24.png", "n": "Degraus para Escada", "id": "degraus-escada"}, {"c": "construcao-civil", "i": "./Alfa Solucoes em Concreto_files/1775584996094-p5jhxe.png", "n": "Caixa de Passagem Elétrica c/ Tampa", "id": "caixa-passagem-eletrica"}];
+const g = document.getElementById('grade');
+g.innerHTML = P.map(p => `<a class="prod" data-cat="${p.c}" href="produto.html?id=${p.id}">
+  <div class="ft"><img src="${p.i}" alt="${p.n}" loading="lazy"></div>
+  <div class="tx"><div><span class="mono">${CAT[p.c]}</span><h4>${p.n}</h4></div><span class="seta">→</span></div></a>`).join('');
+function filtra(c) {
+  document.querySelectorAll('.aba').forEach(b => b.classList.toggle('ativa', b.dataset.cat === c));
+  document.querySelectorAll('.prod').forEach(el => el.classList.toggle('esconde', c !== 'todos' && el.dataset.cat !== c));
+}
+document.querySelectorAll('.aba').forEach(b => b.addEventListener('click', () => filtra(b.dataset.cat)));
+document.querySelectorAll('[data-filtro]').forEach(a => a.addEventListener('click', () => filtra(a.dataset.filtro)));
 </script>
 </body>
 </html>

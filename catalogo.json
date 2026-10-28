@@ -1,0 +1,416 @@
+[
+ {
+  "c": "area-lazer",
+  "i": "./Alfa Solucoes em Concreto_files/1775570064684-3ifvag.png",
+  "n": "Mesa 1 Metro Diâmetro",
+  "id": "mesa-1m-diametro"
+ },
+ {
+  "c": "area-lazer",
+  "i": "./Alfa Solucoes em Concreto_files/1775527296176-trw9d.png",
+  "n": "Pergolado em Concreto",
+  "id": "pergolado-concreto"
+ },
+ {
+  "c": "area-lazer",
+  "i": "./Alfa Solucoes em Concreto_files/1775584016766-de9lf.png",
+  "n": "Banco Reto 2,00 x 0,45",
+  "id": "banco-reto-200x045"
+ },
+ {
+  "c": "area-lazer",
+  "i": "./Alfa Solucoes em Concreto_files/1775584058759-zdlgc.png",
+  "n": "Mesa 0,80 Metro Diâmetro",
+  "id": "mesa-080-diametro"
+ },
+ {
+  "c": "area-lazer",
+  "i": "./Alfa Solucoes em Concreto_files/1775584081285-ysos58.png",
+  "n": "Mesa 0,80 x 0,80",
+  "id": "mesa-080x080"
+ },
+ {
+  "c": "area-lazer",
+  "i": "./Alfa Solucoes em Concreto_files/1775584117823-gokpu.png",
+  "n": "Mesa Sob Medida",
+  "id": "mesa-sob-medida"
+ },
+ {
+  "c": "area-lazer",
+  "i": "./Alfa Solucoes em Concreto_files/1775584281728-fa8h7p.png",
+  "n": "Banco Reto 1,40 x 0,30",
+  "id": "banco-reto-140x030"
+ },
+ {
+  "c": "area-lazer",
+  "i": "./Alfa Solucoes em Concreto_files/1775584316864-5rdakx.png",
+  "n": "Banco de Encosto Estilo Colonial",
+  "id": "banco-encosto-colonial"
+ },
+ {
+  "c": "area-lazer",
+  "i": "./Alfa Solucoes em Concreto_files/1775584391310-eqvbi.png",
+  "n": "Banco Reto 1,50 x 0,45",
+  "id": "banco-reto-150x045"
+ },
+ {
+  "c": "area-lazer",
+  "i": "./Alfa Solucoes em Concreto_files/1775584363101-fqf9g8.png",
+  "n": "Banco Pés U",
+  "id": "banco-pes-u"
+ },
+ {
+  "c": "area-lazer",
+  "i": "./Alfa Solucoes em Concreto_files/1775584426556-rng44.png",
+  "n": "Lixeira em Concreto Fino",
+  "id": "lixeira-concreto-fino"
+ },
+ {
+  "c": "area-lazer",
+  "i": "./Alfa Solucoes em Concreto_files/1775584450856-d69n7e.png",
+  "n": "Cuba Artesanal",
+  "id": "cuba-artesanal"
+ },
+ {
+  "c": "area-lazer",
+  "i": "./Alfa Solucoes em Concreto_files/1775584477606-bt0i6.png",
+  "n": "Cuba Bless",
+  "id": "cuba-bless"
+ },
+ {
+  "c": "area-lazer",
+  "i": "./Alfa Solucoes em Concreto_files/1775584492649-t9f9bb.png",
+  "n": "Cuba Oval Terrazzo",
+  "id": "cuba-oval-terrazzo"
+ },
+ {
+  "c": "area-lazer",
+  "i": "./Alfa Solucoes em Concreto_files/1775584523438-4lux4g.png",
+  "n": "Piso Floral Antiderrapante 4cm",
+  "id": "piso-floral"
+ },
+ {
+  "c": "area-lazer",
+  "i": "./Alfa Solucoes em Concreto_files/1775584578815-yxrd7n.png",
+  "n": "Piso Trevo 6cm",
+  "id": "piso-trevo"
+ },
+ {
+  "c": "area-lazer",
+  "i": "./Alfa Solucoes em Concreto_files/1775584600967-en843j.png",
+  "n": "Mesa de Ping Pong",
+  "id": "mesa-ping-pong"
+ },
+ {
+  "c": "area-lazer",
+  "i": "./Alfa Solucoes em Concreto_files/1775584620970-d0t4g8.png",
+  "n": "Mesa de Futmesa",
+  "id": "mesa-futmesa"
+ },
+ {
+  "c": "area-lazer",
+  "i": "./Alfa Solucoes em Concreto_files/1775584661177-6we5a.png",
+  "n": "Bate Rodas",
+  "id": "bate-rodas"
+ },
+ {
+  "c": "revestimento",
+  "i": "./Alfa Solucoes em Concreto_files/1775584691239-mv8r6.png",
+  "n": "Abstrata",
+  "id": "revestimento-abstrata"
+ },
+ {
+  "c": "revestimento",
+  "i": "./Alfa Solucoes em Concreto_files/1775584759008-3y44cn.png",
+  "n": "Ripado",
+  "id": "revestimento-ripado"
+ },
+ {
+  "c": "revestimento",
+  "i": "./Alfa Solucoes em Concreto_files/1775584800322-khuvhj.png",
+  "n": "Trapézio 3L",
+  "id": "revestimento-trapezio-3l"
+ },
+ {
+  "c": "revestimento",
+  "i": "./Alfa Solucoes em Concreto_files/1775585707934-c8ffdzdl.png",
+  "n": "Tsunami",
+  "id": "revestimento-tsunami"
+ },
+ {
+  "c": "revestimento",
+  "i": "./Alfa Solucoes em Concreto_files/1775585765579-m1zyrp.png",
+  "n": "Zeus",
+  "id": "revestimento-zeus"
+ },
+ {
+  "c": "revestimento",
+  "i": "./Alfa Solucoes em Concreto_files/1775587052919-tinltp.png",
+  "n": "Canjiquinha",
+  "id": "revestimento-canjiquinha"
+ },
+ {
+  "c": "revestimento",
+  "i": "./Alfa Solucoes em Concreto_files/1775587029441-ewvebq.png",
+  "n": "Mini Origame",
+  "id": "revestimento-mini-origame"
+ },
+ {
+  "c": "revestimento",
+  "i": "./Alfa Solucoes em Concreto_files/1775586999136-x83zd.png",
+  "n": "Origame",
+  "id": "revestimento-origame"
+ },
+ {
+  "c": "revestimento",
+  "i": "./Alfa Solucoes em Concreto_files/1775586976232-h3iltd.png",
+  "n": "Mosaico",
+  "id": "revestimento-mosaico"
+ },
+ {
+  "c": "revestimento",
+  "i": "./Alfa Solucoes em Concreto_files/1775586952213-i4utnx.png",
+  "n": "Mosaico Liso",
+  "id": "revestimento-mosaico-liso"
+ },
+ {
+  "c": "revestimento",
+  "i": "./Alfa Solucoes em Concreto_files/1775586924196-qergk2.png",
+  "n": "Multplus",
+  "id": "revestimento-multplus"
+ },
+ {
+  "c": "revestimento",
+  "i": "./Alfa Solucoes em Concreto_files/1775586903154-0uw9aqo.png",
+  "n": "Escaleno",
+  "id": "revestimento-escaleno"
+ },
+ {
+  "c": "revestimento",
+  "i": "./Alfa Solucoes em Concreto_files/1775586879282-vsizli.png",
+  "n": "Estrutural",
+  "id": "revestimento-estrutural"
+ },
+ {
+  "c": "revestimento",
+  "i": "./Alfa Solucoes em Concreto_files/1775586855710-p7txug.png",
+  "n": "Ripa Cimentícia",
+  "id": "revestimento-ripa-cimenticia"
+ },
+ {
+  "c": "revestimento",
+  "i": "./Alfa Solucoes em Concreto_files/1775586324445-3wormi.png",
+  "n": "Filete",
+  "id": "revestimento-filete"
+ },
+ {
+  "c": "revestimento",
+  "i": "./Alfa Solucoes em Concreto_files/1775586293094-clkos4.png",
+  "n": "KIT 4 Mosaico",
+  "id": "revestimento-kit-4-mosaico"
+ },
+ {
+  "c": "revestimento",
+  "i": "./Alfa Solucoes em Concreto_files/1775586269571-o4y6tm.png",
+  "n": "Floral",
+  "id": "revestimento-floral"
+ },
+ {
+  "c": "elemento-vazado",
+  "i": "./Alfa Solucoes em Concreto_files/1775586831993-6fxcr.png",
+  "n": "Arabela",
+  "id": "elemento-arabela"
+ },
+ {
+  "c": "elemento-vazado",
+  "i": "./Alfa Solucoes em Concreto_files/1775586402947-e2sddh.png",
+  "n": "Margarida",
+  "id": "elemento-margarida"
+ },
+ {
+  "c": "elemento-vazado",
+  "i": "./Alfa Solucoes em Concreto_files/1775586379102-h18cd.png",
+  "n": "16 Furos",
+  "id": "elemento-16-furos"
+ },
+ {
+  "c": "elemento-vazado",
+  "i": "./Alfa Solucoes em Concreto_files/1775586357663-irg70b.png",
+  "n": "Triângulo",
+  "id": "elemento-triangulo"
+ },
+ {
+  "c": "elemento-vazado",
+  "i": "./Alfa Solucoes em Concreto_files/1775527262878-f71s3.png",
+  "n": "Quadriculado",
+  "id": "elemento-quadriculado"
+ },
+ {
+  "c": "elemento-vazado",
+  "i": "./Alfa Solucoes em Concreto_files/1775586228226-9tk0im.png",
+  "n": "Mandala",
+  "id": "elemento-mandala"
+ },
+ {
+  "c": "elemento-vazado",
+  "i": "./Alfa Solucoes em Concreto_files/1775586095860-2yhtx.png",
+  "n": "Árabe",
+  "id": "elemento-arabe"
+ },
+ {
+  "c": "elemento-vazado",
+  "i": "./Alfa Solucoes em Concreto_files/1775586028034-xfj9u4.png",
+  "n": "Taco Chinês",
+  "id": "elemento-taco-chines"
+ },
+ {
+  "c": "elemento-vazado",
+  "i": "./Alfa Solucoes em Concreto_files/1775585997627-ewdwxq.png",
+  "n": "Flor",
+  "id": "elemento-flor"
+ },
+ {
+  "c": "elemento-vazado",
+  "i": "./Alfa Solucoes em Concreto_files/1775585976877-x841sl.png",
+  "n": "Anti Chuva",
+  "id": "elemento-anti-chuva"
+ },
+ {
+  "c": "acabamento",
+  "i": "./Alfa Solucoes em Concreto_files/1775585951734-xzmr4.png",
+  "n": "Ralo em Concreto",
+  "id": "ralo-concreto"
+ },
+ {
+  "c": "acabamento",
+  "i": "./Alfa Solucoes em Concreto_files/1775585808230-ukkjfq.png",
+  "n": "Chapéu de Pilar",
+  "id": "chapeu-pilar"
+ },
+ {
+  "c": "acabamento",
+  "i": "./Alfa Solucoes em Concreto_files/1775585849283-4r9tyc.png",
+  "n": "Capa de Muro",
+  "id": "capa-muro"
+ },
+ {
+  "c": "acabamento",
+  "i": "./Alfa Solucoes em Concreto_files/1775585530608-xtpsz.png",
+  "n": "Pingadeira Reta",
+  "id": "pingadeira-reta"
+ },
+ {
+  "c": "acabamento",
+  "i": "./Alfa Solucoes em Concreto_files/1775585501825-zshxp.png",
+  "n": "Piso de Calçada",
+  "id": "piso-calcada"
+ },
+ {
+  "c": "acabamento",
+  "i": "./Alfa Solucoes em Concreto_files/1775585476459-kij6or.png",
+  "n": "Lajota Sextavada",
+  "id": "lajota-sextavada"
+ },
+ {
+  "c": "acabamento",
+  "i": "./Alfa Solucoes em Concreto_files/1775585444958-xmul0w.png",
+  "n": "Lajota Quadrada",
+  "id": "lajota-quadrada"
+ },
+ {
+  "c": "acabamento",
+  "i": "./Alfa Solucoes em Concreto_files/1775585656714-8c2u1a.png",
+  "n": "Pisante Dormente",
+  "id": "pisante-dormente"
+ },
+ {
+  "c": "acabamento",
+  "i": "./Alfa Solucoes em Concreto_files/1775585411725-5txc2f.png",
+  "n": "Piso de Calçada Copacabana",
+  "id": "piso-calcada-copacabana"
+ },
+ {
+  "c": "acabamento",
+  "i": "./Alfa Solucoes em Concreto_files/1775585374318-7x2chv.png",
+  "n": "Piso Podotátil Alerta",
+  "id": "piso-podotátil"
+ },
+ {
+  "c": "acabamento",
+  "i": "./Alfa Solucoes em Concreto_files/1775585327456-g2xi7n.png",
+  "n": "Piso Intertravados",
+  "id": "piso-intertravados"
+ },
+ {
+  "c": "acabamento",
+  "i": "./Alfa Solucoes em Concreto_files/1775585274846-48a45a.png",
+  "n": "Concregrama",
+  "id": "concregrama"
+ },
+ {
+  "c": "acabamento",
+  "i": "./Alfa Solucoes em Concreto_files/1775585251148-25c6dd.png",
+  "n": "Guia de Jardim Ondulada",
+  "id": "guia-jardim-ondulada"
+ },
+ {
+  "c": "acabamento",
+  "i": "./Alfa Solucoes em Concreto_files/1775585232029-c4t8j.png",
+  "n": "Pisão de Jardim",
+  "id": "pisao-jardim"
+ },
+ {
+  "c": "acabamento",
+  "i": "./Alfa Solucoes em Concreto_files/1775585206494-mkjtn7.png",
+  "n": "Guia",
+  "id": "guia"
+ },
+ {
+  "c": "construcao-civil",
+  "i": "./Alfa Solucoes em Concreto_files/1775585163512-nuv1ij.png",
+  "n": "Casa de Gás 2 Botijão",
+  "id": "casa-gas-2-botijao"
+ },
+ {
+  "c": "construcao-civil",
+  "i": "./Alfa Solucoes em Concreto_files/1775585141246-0yrg5p.png",
+  "n": "Casa de Gás 1 Botijão",
+  "id": "casa-gas-1-botijao"
+ },
+ {
+  "c": "construcao-civil",
+  "i": "./Alfa Solucoes em Concreto_files/1775585119022-qccckz.png",
+  "n": "Armário de Concreto",
+  "id": "armario-concreto"
+ },
+ {
+  "c": "construcao-civil",
+  "i": "./Alfa Solucoes em Concreto_files/1775585102441-1k32bp.png",
+  "n": "Placa de Concreto",
+  "id": "placa-concreto"
+ },
+ {
+  "c": "construcao-civil",
+  "i": "./Alfa Solucoes em Concreto_files/1775585018672-9zzbr.png",
+  "n": "Meia Cana de Concreto",
+  "id": "meia-cana"
+ },
+ {
+  "c": "construcao-civil",
+  "i": "./Alfa Solucoes em Concreto_files/1775585049039-qsjm5r.png",
+  "n": "Cocho",
+  "id": "cocho"
+ },
+ {
+  "c": "construcao-civil",
+  "i": "./Alfa Solucoes em Concreto_files/1775585588007-ywr24.png",
+  "n": "Degraus para Escada",
+  "id": "degraus-escada"
+ },
+ {
+  "c": "construcao-civil",
+  "i": "./Alfa Solucoes em Concreto_files/1775584996094-p5jhxe.png",
+  "n": "Caixa de Passagem Elétrica c/ Tampa",
+  "id": "caixa-passagem-eletrica"
+ }
+]
